@@ -8,7 +8,8 @@ public class createButtonScript : MonoBehaviour
 
     public bool isActive;
 
-    public void buttonClicked() {
+    // Handles the click event for the button
+    public void ButtonClicked() {
         Debug.Log("PAINIS");
         if (!isActive) {
             this.isActive = !this.isActive;

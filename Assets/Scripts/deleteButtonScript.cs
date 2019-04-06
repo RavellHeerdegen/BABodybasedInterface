@@ -7,7 +7,8 @@ public class deleteButtonScript : MonoBehaviour
 
     public bool isActive;
     
-    public void buttonClicked() {
+    // Handles the click event for the button
+    public void ButtonClicked() {
 
     }
 }
