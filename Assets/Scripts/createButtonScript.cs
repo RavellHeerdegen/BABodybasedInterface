@@ -8,6 +8,10 @@ public class createButtonScript : MonoBehaviour
 
     public bool isActive;
 
+    public Button cubebutton;
+    public Button spherebutton;
+    public Button cylinderButton;
+
     // Handles the click event for the button
     public void ButtonClicked() {
         Debug.Log("PAINIS");
@@ -20,6 +24,9 @@ public class createButtonScript : MonoBehaviour
             GameObject.Find("CreateButton").GetComponent<Button>().colors = colors;
 
             // Expand button view
+            cubebutton.gameObject.SetActive(true);
+            spherebutton.gameObject.SetActive(true);
+            cylinderButton.gameObject.SetActive(true);
 
             // Disable other first level buttons
             GameObject.Find("ManipulateButton").GetComponent<Button>().interactable = false;
@@ -34,6 +41,9 @@ public class createButtonScript : MonoBehaviour
             GameObject.Find("CreateButton").GetComponent<Button>().colors = colors;
 
             // Collapse button view
+            cubebutton.gameObject.SetActive(false);
+            spherebutton.gameObject.SetActive(false);
+            cylinderButton.gameObject.SetActive(false);
 
             // Enable other first level buttons
             GameObject.Find("ManipulateButton").GetComponent<Button>().interactable = true;
