@@ -41,6 +41,10 @@
       "requirement": "optional"
     },
     {
+      "name": "/actions/default/in/RoughPush",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

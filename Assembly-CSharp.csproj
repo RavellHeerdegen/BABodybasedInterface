@@ -65,9 +65,12 @@
     <Compile Include="Assets\Scripts\cylinderButtonScript.cs" />
     <Compile Include="Assets\Scripts\deleteButtonScript.cs" />
     <Compile Include="Assets\Scripts\manipulateButtonScript.cs" />
+    <Compile Include="Assets\Scripts\rotateButtonScript.cs" />
+    <Compile Include="Assets\Scripts\scaleButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Selectable.cs" />
+    <Compile Include="Assets\Scripts\SelectedObjectHandler.cs" />
     <Compile Include="Assets\Scripts\sphereButtonScript.cs" />
-    <Compile Include="Assets\Selectable.cs" />
-    <Compile Include="Assets\SelectedObjectHandler.cs" />
+    <Compile Include="Assets\Scripts\translateButtonScript.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

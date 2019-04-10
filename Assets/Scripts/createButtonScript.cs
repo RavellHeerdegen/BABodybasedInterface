@@ -8,6 +8,12 @@ public class createButtonScript : MonoBehaviour
 
     public bool isActive;
 
+    // First level buttons
+    public Button manipulateButton;
+    public Button createButton;
+    public Button deleteButton;
+
+    // Second level buttons
     public Button cubebutton;
     public Button spherebutton;
     public Button cylinderButton;
@@ -18,9 +24,9 @@ public class createButtonScript : MonoBehaviour
             this.isActive = !this.isActive;
 
             // Change the active color
-            var colors = GameObject.Find("CreateButton").GetComponent<Button>().colors;
+            var colors = createButton.GetComponent<Button>().colors;
             colors.normalColor = new Color(0, 237, 255);
-            GameObject.Find("CreateButton").GetComponent<Button>().colors = colors;
+            createButton.GetComponent<Button>().colors = colors;
 
             // Expand button view
             cubebutton.gameObject.SetActive(true);
@@ -28,16 +34,16 @@ public class createButtonScript : MonoBehaviour
             cylinderButton.gameObject.SetActive(true);
 
             // Disable other first level buttons
-            GameObject.Find("ManipulateButton").GetComponent<Button>().interactable = false;
-            GameObject.Find("DeleteButton").GetComponent<Button>().interactable = false;
+            manipulateButton.GetComponent<Button>().interactable = false;
+            deleteButton.GetComponent<Button>().interactable = false;
 
         } else {
             this.isActive = !this.isActive;
 
             // Change the active color
-            var colors = GameObject.Find("CreateButton").GetComponent<Button>().colors;
+            var colors = createButton.GetComponent<Button>().colors;
             colors.normalColor = new Color(255, 255, 255);
-            GameObject.Find("CreateButton").GetComponent<Button>().colors = colors;
+            createButton.GetComponent<Button>().colors = colors;
 
             // Collapse button view
             cubebutton.gameObject.SetActive(false);
@@ -45,8 +51,8 @@ public class createButtonScript : MonoBehaviour
             cylinderButton.gameObject.SetActive(false);
 
             // Enable other first level buttons
-            GameObject.Find("ManipulateButton").GetComponent<Button>().interactable = true;
-            GameObject.Find("DeleteButton").GetComponent<Button>().interactable = true;
+            manipulateButton.GetComponent<Button>().interactable = true;
+            deleteButton.GetComponent<Button>().interactable = true;
         }
     }
 }
