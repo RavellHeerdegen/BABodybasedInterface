@@ -14,7 +14,6 @@ public class createButtonScript : MonoBehaviour
 
     // Handles the click event for the button
     public void ButtonClicked() {
-        Debug.Log("PAINIS");
         if (!isActive) {
             this.isActive = !this.isActive;
 

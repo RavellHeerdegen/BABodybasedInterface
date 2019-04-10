@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class sphereButtonScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject spherePrefab;
+    public Camera playerCamera;
+
+    // Handles the click event for the button
+    public void ButtonClicked()
     {
-        
+        Instantiate(spherePrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }
