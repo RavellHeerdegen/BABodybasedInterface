@@ -158,5 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserPointer: {fileID: 0}
+  highlightedOutlineMaterial: {fileID: 2100000, guid: 1c971eb41140277429c73a83fefeba75,
+    type: 2}
   highlightMaterial: {fileID: 2100000, guid: 7f61daba1273ada4fa82adf1b10aa81c, type: 2}
   normalMaterial: {fileID: 2100000, guid: fd270533ccffdaa43a682f7cb03a5e3f, type: 2}

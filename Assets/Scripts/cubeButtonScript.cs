@@ -11,6 +11,6 @@ public class cubeButtonScript : MonoBehaviour
     // Handles the click event for the button
     public void ButtonClicked()
     {
-        Instantiate(cubePrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(cubePrefab, new Vector3(0, 2, 0), Quaternion.identity);
     }
 }
