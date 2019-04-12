@@ -7,6 +7,13 @@ public class scaleButtonScript : MonoBehaviour
 {
     private bool isActive;
 
+    public SelectedObjectHandler selectedObjectHandler;
+    public GameObject clickEventHandler;
+
+    public Button translateButton;
+    public Button rotateButton;
+    public Button scaleButton;
+
     // Sets the active status
     public void setActiveStatus(bool newStatus)
     {
@@ -38,17 +45,21 @@ public class scaleButtonScript : MonoBehaviour
         {
             isActive = !this.isActive;
             // Change the active color
-            var colors = GameObject.Find("ScaleButton").GetComponent<Button>().colors;
+            var colors = scaleButton.GetComponent<Button>().colors;
             colors.normalColor = new Color(255, 200, 0);
-            GameObject.Find("ScaleButton").GetComponent<Button>().colors = colors;
+            scaleButton.GetComponent<Button>().colors = colors;
+
+            // Set the active status in the selectedObjectHandler
+            selectedObjectHandler.GetComponent<SelectedObjectHandler>().setScalingActiveStatus(true);
+
+            // force defaults of other manipulation actions
+            clickEventHandler.GetComponent<translateButtonScript>().forceDefault();
+            clickEventHandler.GetComponent<rotateButtonScript>().forceDefault();
         }
         else
         {
-            isActive = !this.isActive;
-            // Change the active color
-            var colors = GameObject.Find("ScaleButton").GetComponent<Button>().colors;
-            colors.normalColor = new Color(255, 255, 255);
-            GameObject.Find("ScaleButton").GetComponent<Button>().colors = colors;
+            // Back to default
+            forceDefault();
         }
     }
 
@@ -56,8 +67,11 @@ public class scaleButtonScript : MonoBehaviour
     public void forceDefault()
     {
         setActiveStatus(false);
-        var colors = GameObject.Find("ScaleButton").GetComponent<Button>().colors;
+        var colors = scaleButton.GetComponent<Button>().colors;
         colors.normalColor = new Color(255, 255, 255);
-        GameObject.Find("ScaleButton").GetComponent<Button>().colors = colors;
+        scaleButton.GetComponent<Button>().colors = colors;
+
+        // Set the active status in the selectedObjectHandler
+        selectedObjectHandler.GetComponent<SelectedObjectHandler>().setScalingActiveStatus(false);
     }
 }

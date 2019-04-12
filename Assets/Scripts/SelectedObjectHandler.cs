@@ -1,26 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.Extras;
+using Valve.VR;
 using UnityEngine.UI;
+using Valve.VR.InteractionSystem;
 
 public class SelectedObjectHandler : MonoBehaviour
 {
 
     public GameObject selectedObject;
 
+    public Hand leftHand;
+    public Hand rightHand;
+
     public Button translateButton;
     public Button rotateButton;
     public Button scaleButton;
+
+    // Last left controller coordinates
+    Vector3 lastLeftControllerPosition;
+    Vector3 lastLeftControllerRotation;
+
+    // Last right controller coordinates
+    Vector3 lastRightControllerPosition;
+    Vector3 lastRightControllerRotation;
 
     private Vector3 leftControllerPosition;
     private Vector3 rightControllerPosition;
     private Vector3 leftControllerRotation;
     private Vector3 rightControllerRotation;
 
-    private bool isTranslating;
-    private bool isRotating;
-    private bool isScaling;
+    private bool translationActive;
+    private bool rotationActive;
+    private bool scalingActive;
 
     // Sets the selected laserpointer Object, unsets if null
     public void setSelectedObject(GameObject selectedObject)
@@ -38,11 +50,48 @@ public class SelectedObjectHandler : MonoBehaviour
         }
     }
 
+    // Sets the status of the translationActive variable
+    public void setTranslationActiveStatus(bool newstatus)
+    {
+        this.translationActive = newstatus;
+    }
+
+    // Sets the status of the rotationActive variable
+    public void setRotationActiveStatus(bool newstatus)
+    {
+        this.rotationActive = newstatus;
+    }
+
+    // Sets the status of the scalingActive variable
+    public void setScalingActiveStatus(bool newstatus)
+    {
+        this.scalingActive = newstatus;
+    }
+
     // Returns the selected laserpointer object
     public GameObject getSelectedObject()
     {
         return this.selectedObject;
     }
+
+    // Returns the active status of the translation variable
+    public bool getTranslationActiveStatus()
+    {
+        return this.translationActive;
+    }
+
+    // Returns the active status of the rotation variable
+    public bool getRotationActiveStatus()
+    {
+        return this.rotationActive;
+    }
+
+    // Returns the active status of the scaling variable
+    public bool getScalingActiveStatus()
+    {
+        return this.scalingActive;
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +102,44 @@ public class SelectedObjectHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Get current controller coordinates
+        leftControllerPosition = leftHand.transform.position;
+        lastLeftControllerRotation = leftHand.transform.eulerAngles;
+        rightControllerPosition = rightHand.transform.position;
+        rightControllerRotation = rightHand.transform.eulerAngles;
+
         // Check if selectedOption of Menu is translation, rotation or scaling
+        // Translation active
+        if (getTranslationActiveStatus())
+        {
+            // True when grip button of right controller is pressed down
+            if (SteamVR_Actions._default.RoughPush.GetStateDown((SteamVR_Input_Sources.RightHand)))
+            {
+                if (lastRightControllerPosition != rightControllerPosition)
+                {
+                    Vector3 differenceVector = new Vector3();
+                    differenceVector.x = rightControllerPosition.x - lastRightControllerPosition.x;
+                    differenceVector.y = rightControllerPosition.y - lastRightControllerPosition.y;
+                    differenceVector.z = rightControllerPosition.z - lastRightControllerPosition.z;
+
+                    selectedObject.transform.position = selectedObject.transform.position + differenceVector;
+                }
+            }
+        }
+        else if (getRotationActiveStatus()) // Rotation active
+        {
+
+        }
+        else if(getScalingActiveStatus()) // Scaling active
+        {
+
+        }
+
+        // Set new coordinates for next update
+        lastLeftControllerPosition = leftHand.transform.position;
+        lastLeftControllerRotation = leftHand.transform.eulerAngles;
+        lastRightControllerPosition = rightHand.transform.position;
+        lastRightControllerRotation = rightHand.transform.eulerAngles;
     }
 
     // Listens for the translate event and handles the translation of the selected object if one exists

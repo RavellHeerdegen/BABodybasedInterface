@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class sphereButtonScript : MonoBehaviour
 {
 
     public GameObject spherePrefab;
-    public Camera playerCamera;
+    public Player player;
 
     // Handles the click event for the button
     public void ButtonClicked()
     {
-        Instantiate(spherePrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(spherePrefab, player.transform.position + new Vector3(2, 2, 0), Quaternion.identity);
     }
 }
