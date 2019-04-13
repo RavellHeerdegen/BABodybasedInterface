@@ -49,13 +49,16 @@ public class Selectable : MonoBehaviour
     // Handles the pointerIn event of the steamvr laserpointer
     public void PointerInside(object sender, PointerEventArgs e)
     {
-        if (e.target.name == this.gameObject.name && pointed == false)
+        if (this.gameObject)
         {
-            pointed = true;
-            // Highlight this object when not already highlighted
-            if (!selected)
+            if (e.target.gameObject == this.gameObject && pointed == false)
             {
-                rend.material = highlightMaterial;
+                pointed = true;
+                // Highlight this object when not already highlighted
+                if (!selected)
+                {
+                    rend.material = highlightMaterial;
+                }
             }
         }
     }
@@ -63,13 +66,16 @@ public class Selectable : MonoBehaviour
     // Handles the pointerOut event of the steamvr laserpointer
     public void PointerOutside(object sender, PointerEventArgs e)
     {
-        if (e.target.name == this.gameObject.name && pointed == true)
+        if (this.gameObject)
         {
-            pointed = false;
-            // Delete highlighting when not selected
-            if (!selected)
+            if (e.target.gameObject == this.gameObject && pointed == true)
             {
-                rend.material = normalMaterial;
+                pointed = false;
+                // Delete highlighting when not selected
+                if (!selected)
+                {
+                    rend.material = normalMaterial;
+                }
             }
         }
     }
@@ -77,25 +83,47 @@ public class Selectable : MonoBehaviour
     // Handles the pointerClick event of the steamvr laserpointer
     public void PointerClick(object sender, PointerEventArgs e)
     {
-        if (e.target.name == this.gameObject.name && pointed == true && selected == false)
+        if (this.gameObject)
         {
-            selected = true;
-            // Set selectedObject in SelectedObjectHandler to this one
-            GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(this.gameObject);
+            if (e.target.gameObject == this.gameObject && pointed == true && selected == false)
+            {
+                selected = true;
+                // Set selectedObject in SelectedObjectHandler to this one
+                if (this.gameObject)
+                GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(this.gameObject);
 
-            // Highlight this object permanently
-            rend.material = highlightedOutlineMaterial;
-            rend.material.shader = Shader.Find("Valve/VR/Highlight");
+                // Highlight this object permanently
+                rend.material = highlightedOutlineMaterial;
+                rend.material.shader = Shader.Find("Valve/VR/Highlight");
 
-        } else if(e.target.name == this.gameObject.name && pointed == true && selected == true)
-        {
-            selected = false;
-            // Set selectedObject in SelectedObjectHandler to null
-            GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+            }
+            else if (e.target.gameObject == this.gameObject && pointed == true && selected == true)
+            {
+                selected = false;
+                // Set selectedObject in SelectedObjectHandler to null
+                if (this.gameObject)
+                GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
 
-            // Delete highlighting color
-            rend.material = normalMaterial;
-            rend.material.shader = Shader.Find("Standard");
+                // Delete highlighting color
+                rend.material = normalMaterial;
+                rend.material.shader = Shader.Find("Standard");
+            }
         }
+    }
+
+    public void forceUnselect()
+    {
+        selected = false;
+
+        // Delete highlighting color
+        rend.material = normalMaterial;
+        rend.material.shader = Shader.Find("Standard");
+    }
+
+    // Destroys this gameObject
+    public void destroyOnCommand()
+    {
+        // Sets inactive
+        this.gameObject.SetActive(false);
     }
 }

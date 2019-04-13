@@ -12,6 +12,6 @@ public class cylinderButtonScript : MonoBehaviour
     // Handles the click event for the button
     public void ButtonClicked()
     {
-        Instantiate(cylinderPrefab, player.transform.position + new Vector3(2, 2, 0), Quaternion.identity);
+        Instantiate(cylinderPrefab, new Vector3(0, 1, 0), Quaternion.identity);
     }
 }

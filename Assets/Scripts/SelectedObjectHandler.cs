@@ -13,6 +13,9 @@ public class SelectedObjectHandler : MonoBehaviour
     public Hand leftHand;
     public Hand rightHand;
 
+    public SteamVR_Action_Boolean grapGrip;
+    public SteamVR_Input_Sources inputRightHand = SteamVR_Input_Sources.RightHand;
+
     public Button translateButton;
     public Button rotateButton;
     public Button scaleButton;
@@ -46,7 +49,8 @@ public class SelectedObjectHandler : MonoBehaviour
             this.selectedObject = null;
         } else // Case 3: an object is selected and user wants to select a new one without deselecting the old one
         {
-            // Ignore
+            this.selectedObject.GetComponent<Selectable>().forceUnselect();
+            this.selectedObject = selectedObject;
         }
     }
 
@@ -96,7 +100,7 @@ public class SelectedObjectHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -112,16 +116,21 @@ public class SelectedObjectHandler : MonoBehaviour
         // Translation active
         if (getTranslationActiveStatus())
         {
+            Debug.Log("Translation active");
             // True when grip button of right controller is pressed down
-            if (SteamVR_Actions._default.RoughPush.GetStateDown((SteamVR_Input_Sources.RightHand)))
+            Debug.Log(grapGrip.GetState(inputRightHand));
+            if (grapGrip.GetState(inputRightHand))
             {
+                Debug.Log("Grip button pushed down");
                 if (lastRightControllerPosition != rightControllerPosition)
                 {
+                    Debug.Log("Recent and current position differ");
                     Vector3 differenceVector = new Vector3();
-                    differenceVector.x = rightControllerPosition.x - lastRightControllerPosition.x;
-                    differenceVector.y = rightControllerPosition.y - lastRightControllerPosition.y;
-                    differenceVector.z = rightControllerPosition.z - lastRightControllerPosition.z;
+                    differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 5;
+                    differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 5;
+                    differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 5;
 
+                    if (selectedObject)
                     selectedObject.transform.position = selectedObject.transform.position + differenceVector;
                 }
             }
@@ -166,7 +175,10 @@ public class SelectedObjectHandler : MonoBehaviour
     // Destroys the currently selected gameobject
     public void destroySelectedObject()
     {
-        if(this.selectedObject != null)
-        Destroy(this.selectedObject);
+        if (this.selectedObject)
+        {
+            this.selectedObject.GetComponent<Selectable>().destroyOnCommand();
+            this.selectedObject = null;
+        }
     }
 }

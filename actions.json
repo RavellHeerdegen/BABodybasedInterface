@@ -41,7 +41,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/RoughPush",
+      "name": "/actions/default/in/GripPush",
       "type": "boolean"
     },
     {
@@ -276,12 +276,60 @@
       "name": "/actions/htc_viu/out/viu_vib_01",
       "type": "vibration",
       "requirement": "optional"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/GrabPinch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/GrabGrip",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/InteractUI",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/Teleport",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/Squeeze",
+      "type": "vector1",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/bodybasedUI/in/GripPush",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/bodybasedUI/out/Haptic",
+      "type": "vibration"
     }
   ],
   "action_sets": [
     {
       "name": "/actions/default",
-      "usage": "single"
+      "usage": "leftright"
     },
     {
       "name": "/actions/platformer",
@@ -297,6 +345,10 @@
     },
     {
       "name": "/actions/htc_viu",
+      "usage": "leftright"
+    },
+    {
+      "name": "/actions/bodybasedUI",
       "usage": "leftright"
     }
   ],
@@ -434,7 +486,17 @@
       "/actions/htc_viu/in/viu_axis_2xy": "Axis2 X&Y (Thumbstick)",
       "/actions/htc_viu/in/viu_axis_3xy": "Axis3 X&Y",
       "/actions/htc_viu/in/viu_axis_4xy": "Axis4 X&Y",
-      "/actions/htc_viu/out/viu_vib_01": "Vibration"
+      "/actions/htc_viu/out/viu_vib_01": "Vibration",
+      "/actions/bodybasedUI/in/InteractUI": "Interact With UI",
+      "/actions/bodybasedUI/in/GrabGrip": "Grab Grip",
+      "/actions/bodybasedUI/out/Haptic": "Haptic",
+      "/actions/bodybasedUI/in/Teleport": "Teleport",
+      "/actions/bodybasedUI/in/Pose": "Pose",
+      "/actions/bodybasedUI/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/bodybasedUI/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/bodybasedUI/in/HeadsetOnHead": "Headset on head (proximity sensor)",
+      "/actions/default/in/GripPush": "Grip Push",
+      "/actions/bodybasedUI/in/GripPush": "Grip Push"
     }
   ]
 }

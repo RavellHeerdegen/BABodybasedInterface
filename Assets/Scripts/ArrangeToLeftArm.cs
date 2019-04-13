@@ -11,19 +11,19 @@ public class ArrangeToLeftArm : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Rotate at start to lay UI on the arm
-        transform.Rotate(90, 0, 0, Space.World);
         // Position at start to the left arm behind the wrist
-        transform.position = leftHand.transform.position + new Vector3(-5, -5, 0);
-        
+        transform.position = leftHand.transform.position + new Vector3(0.17f, 0.76f, -0.9f);
+        // Rotate at start to lay UI on the arm
+        transform.Rotate(130, -7, 7, Space.World);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         // Fix position to the actual controller position
-        transform.position = leftHand.transform.position + new Vector3(-5, -5, 0);
+        // transform.position = leftHand.transform.position;
         // Fix rotation to actual controller rotation, but freeze in x and z
-        transform.eulerAngles = new Vector3(90, leftHand.transform.eulerAngles.y, 0);
+        // transform.eulerAngles = new Vector3(90, leftHand.transform.eulerAngles.y, 0);
     }
 }

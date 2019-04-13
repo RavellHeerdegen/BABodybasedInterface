@@ -89,11 +89,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean RoughPush
+        public virtual SteamVR_Action_Boolean GripPush
         {
             get
             {
-                return SteamVR_Actions.default_RoughPush;
+                return SteamVR_Actions.default_GripPush;
             }
         }
         
