@@ -116,32 +116,15 @@ public class SelectedObjectHandler : MonoBehaviour
         // Translation active
         if (getTranslationActiveStatus())
         {
-            Debug.Log("Translation active");
-            // True when grip button of right controller is pressed down
-            Debug.Log(grapGrip.GetState(inputRightHand));
-            if (grapGrip.GetState(inputRightHand))
-            {
-                Debug.Log("Grip button pushed down");
-                if (lastRightControllerPosition != rightControllerPosition)
-                {
-                    Debug.Log("Recent and current position differ");
-                    Vector3 differenceVector = new Vector3();
-                    differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 5;
-                    differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 5;
-                    differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 5;
-
-                    if (selectedObject)
-                    selectedObject.transform.position = selectedObject.transform.position + differenceVector;
-                }
-            }
+            translateSelectedObject();
         }
         else if (getRotationActiveStatus()) // Rotation active
         {
-
+            rotateSelectedObject();
         }
         else if(getScalingActiveStatus()) // Scaling active
         {
-
+            scaleSelectedObject();
         }
 
         // Set new coordinates for next update
@@ -154,16 +137,44 @@ public class SelectedObjectHandler : MonoBehaviour
     // Listens for the translate event and handles the translation of the selected object if one exists
     public void translateSelectedObject()
     {
-        // If SteamVR_Input._default.inActions.ManipulateGrip.GetStateDown(SteamVR_Input_Sources.Right) then
-        // check gripPush on right hand, check new position change of controller to previous position
-        // Update coordinates of selectedObject.transform with distance
-        // i.e. controller goes forward 5 units, selectedObject goes forward 5 units
+        // True when grip button of right controller is pressed down
+        Debug.Log(grapGrip.GetState(inputRightHand));
+        if (grapGrip.GetState(inputRightHand))
+        {
+            Debug.Log("Grip button pushed down");
+            if (lastRightControllerPosition != rightControllerPosition)
+            {
+                Debug.Log("Recent and current position differ");
+                Vector3 differenceVector = new Vector3();
+                differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 5;
+                differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 5;
+                differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 5;
+
+                if (selectedObject)
+                    selectedObject.transform.position = selectedObject.transform.position + differenceVector;
+            }
+        }
     }
 
     // Listens for the rotate event and handles the rotation of the selected object if one exists
     public void rotateSelectedObject()
     {
+        Debug.Log(grapGrip.GetState(inputRightHand));
+        if (grapGrip.GetState(inputRightHand))
+        {
+            Debug.Log("Grip button pushed down");
+            if (lastRightControllerPosition != rightControllerPosition)
+            {
+                Debug.Log("Recent and current position differ");
+                Vector3 differenceVector = new Vector3();
+                differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 50;
+                differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 50;
+                differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 50;
 
+                if (selectedObject)
+                    selectedObject.transform.eulerAngles = selectedObject.transform.eulerAngles + differenceVector;
+            }
+        }
     }
 
     // Listens for the scale event and handles the scaling of the selected object if one exists

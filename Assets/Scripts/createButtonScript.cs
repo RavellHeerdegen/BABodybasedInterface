@@ -34,8 +34,8 @@ public class createButtonScript : MonoBehaviour
             cylinderButton.gameObject.SetActive(true);
 
             // Disable other first level buttons
-            manipulateButton.GetComponent<Button>().interactable = false;
-            deleteButton.GetComponent<Button>().interactable = false;
+            // manipulateButton.GetComponent<Button>().interactable = false;
+            // deleteButton.GetComponent<Button>().interactable = false;
 
         } else {
             this.isActive = !this.isActive;
@@ -51,8 +51,8 @@ public class createButtonScript : MonoBehaviour
             cylinderButton.gameObject.SetActive(false);
 
             // Enable other first level buttons
-            manipulateButton.GetComponent<Button>().interactable = true;
-            deleteButton.GetComponent<Button>().interactable = true;
+            // manipulateButton.GetComponent<Button>().interactable = true;
+            // deleteButton.GetComponent<Button>().interactable = true;
         }
     }
 }

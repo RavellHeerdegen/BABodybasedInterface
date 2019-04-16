@@ -38,8 +38,8 @@ public class manipulateButtonScript : MonoBehaviour
             scaleButton.gameObject.SetActive(true);
 
             // Disable other first level buttons
-            createButton.GetComponent<Button>().interactable = false;
-            deleteButton.GetComponent<Button>().interactable = false;
+            // createButton.GetComponent<Button>().interactable = false;
+            // deleteButton.GetComponent<Button>().interactable = false;
 
         }
         else
@@ -62,8 +62,8 @@ public class manipulateButtonScript : MonoBehaviour
             scaleButton.gameObject.SetActive(false);
 
             // Enable other first level buttons
-            createButton.GetComponent<Button>().interactable = true;
-            deleteButton.GetComponent<Button>().interactable = true;
+            // createButton.GetComponent<Button>().interactable = true;
+            // deleteButton.GetComponent<Button>().interactable = true;
         }
     }
 }
