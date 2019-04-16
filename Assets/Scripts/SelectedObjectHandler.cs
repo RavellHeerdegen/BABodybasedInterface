@@ -14,6 +14,7 @@ public class SelectedObjectHandler : MonoBehaviour
     public Hand rightHand;
 
     public SteamVR_Action_Boolean grapGrip;
+    public SteamVR_Input_Sources inputLeftHand = SteamVR_Input_Sources.LeftHand;
     public SteamVR_Input_Sources inputRightHand = SteamVR_Input_Sources.RightHand;
 
     public Button translateButton;
@@ -28,11 +29,17 @@ public class SelectedObjectHandler : MonoBehaviour
     Vector3 lastRightControllerPosition;
     Vector3 lastRightControllerRotation;
 
+    // Current left controller pos and rot, current right controller pos and rot
     private Vector3 leftControllerPosition;
     private Vector3 rightControllerPosition;
     private Vector3 leftControllerRotation;
     private Vector3 rightControllerRotation;
 
+    // last and current distance between controllers
+    private float distanceOfControllers;
+    private float lastDistanceOfControllers;
+
+    // States for manipulation tasks
     private bool translationActive;
     private bool rotationActive;
     private bool scalingActive;
@@ -41,13 +48,15 @@ public class SelectedObjectHandler : MonoBehaviour
     public void setSelectedObject(GameObject selectedObject)
     {
         // Case 1: a new object got selected and no other is currently selected
-        if(selectedObject != null && !this.selectedObject)
+        if (selectedObject != null && !this.selectedObject)
         {
             this.selectedObject = selectedObject;
-        } else if(selectedObject == null && this.selectedObject) // Case 2: object got deselected
+        }
+        else if (selectedObject == null && this.selectedObject) // Case 2: object got deselected
         {
             this.selectedObject = null;
-        } else // Case 3: an object is selected and user wants to select a new one without deselecting the old one
+        }
+        else // Case 3: an object is selected and user wants to select a new one without deselecting the old one
         {
             this.selectedObject.GetComponent<Selectable>().forceUnselect();
             this.selectedObject = selectedObject;
@@ -111,6 +120,7 @@ public class SelectedObjectHandler : MonoBehaviour
         lastLeftControllerRotation = leftHand.transform.eulerAngles;
         rightControllerPosition = rightHand.transform.position;
         rightControllerRotation = rightHand.transform.eulerAngles;
+        distanceOfControllers = Vector3.Distance(rightControllerPosition, leftControllerPosition);
 
         // Check if selectedOption of Menu is translation, rotation or scaling
         // Translation active
@@ -122,16 +132,17 @@ public class SelectedObjectHandler : MonoBehaviour
         {
             rotateSelectedObject();
         }
-        else if(getScalingActiveStatus()) // Scaling active
+        else if (getScalingActiveStatus()) // Scaling active
         {
             scaleSelectedObject();
         }
 
-        // Set new coordinates for next update
+        // Set new coordinates for next update and calculate distance between the controllers
         lastLeftControllerPosition = leftHand.transform.position;
         lastLeftControllerRotation = leftHand.transform.eulerAngles;
         lastRightControllerPosition = rightHand.transform.position;
         lastRightControllerRotation = rightHand.transform.eulerAngles;
+        lastDistanceOfControllers = Vector3.Distance(rightControllerPosition, leftControllerPosition);
     }
 
     // Listens for the translate event and handles the translation of the selected object if one exists
@@ -151,7 +162,9 @@ public class SelectedObjectHandler : MonoBehaviour
                 differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 5;
 
                 if (selectedObject)
+                {
                     selectedObject.transform.position = selectedObject.transform.position + differenceVector;
+                }  
             }
         }
     }
@@ -172,7 +185,9 @@ public class SelectedObjectHandler : MonoBehaviour
                 differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 50;
 
                 if (selectedObject)
-                    selectedObject.transform.eulerAngles = selectedObject.transform.eulerAngles + differenceVector;
+                {
+                    selectedObject.transform.eulerAngles = selectedObject.transform.eulerAngles + new Vector3(differenceVector.z, differenceVector.y, differenceVector.x);
+                }
             }
         }
     }
@@ -180,7 +195,31 @@ public class SelectedObjectHandler : MonoBehaviour
     // Listens for the scale event and handles the scaling of the selected object if one exists
     public void scaleSelectedObject()
     {
-
+        Debug.Log(grapGrip.GetState(inputRightHand));
+        if (grapGrip.GetState(inputRightHand) && grapGrip.GetState(inputLeftHand))
+        {
+            Debug.Log("Grip button pushed down on both controllers");
+            if (lastRightControllerPosition != rightControllerPosition || lastLeftControllerPosition != leftControllerPosition)
+            {
+                Debug.Log("Recent and current position differ");
+                if (distanceOfControllers > lastDistanceOfControllers)
+                {
+                    Debug.Log("Distance is bigger now");
+                    if (selectedObject)
+                    {
+                        selectedObject.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+                    }
+                }
+                else if (distanceOfControllers < lastDistanceOfControllers)
+                {
+                    Debug.Log("Distance is smaller now");
+                    if (selectedObject)
+                    {
+                        selectedObject.transform.localScale -= new Vector3(0.5f, 0.5f, 0.5f);
+                    }
+                }
+            }
+        }
     }
 
     // Destroys the currently selected gameobject
