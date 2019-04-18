@@ -365,6 +365,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97279421}
   m_CullTransparentMesh: 0
+--- !u!4 &122393524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 429506, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1549734267}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +982,7 @@ GameObject:
   - component: {fileID: 537604012}
   m_Layer: 5
   m_Name: RotateButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1300,7 +1306,7 @@ GameObject:
   - component: {fileID: 660712821}
   m_Layer: 5
   m_Name: CreateButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1662,7 +1668,7 @@ GameObject:
   - component: {fileID: 738764769}
   m_Layer: 5
   m_Name: TranslateButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3031,7 +3037,7 @@ GameObject:
   - component: {fileID: 1031754092}
   m_Layer: 5
   m_Name: CylinderButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3749,7 +3755,7 @@ GameObject:
   - component: {fileID: 1258073756}
   m_Layer: 5
   m_Name: ScaleButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3949,7 +3955,7 @@ GameObject:
   - component: {fileID: 1264429573}
   m_Layer: 5
   m_Name: CubeButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4521,7 +4527,7 @@ GameObject:
   - component: {fileID: 1475619563}
   m_Layer: 5
   m_Name: ManipulateButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4859,9 +4865,13 @@ MonoBehaviour:
   selectedObject: {fileID: 0}
   leftHand: {fileID: 1891623511}
   rightHand: {fileID: 1549734269}
+  triggerDown:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
   grapGrip:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
+  inputLeftHand: 1
   inputRightHand: 2
   translateButton: {fileID: 738764767}
   rotateButton: {fileID: 537604010}
@@ -5029,6 +5039,22 @@ PrefabInstance:
       propertyPath: fingerJointHoverRadius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13693334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13693334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Center.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 122393524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!20 &1549734268 stripped
@@ -5237,7 +5263,7 @@ GameObject:
   - component: {fileID: 2031891688}
   m_Layer: 5
   m_Name: DeleteButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5249,18 +5275,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031891686}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 727858871}
   - {fileID: 322984737}
   m_Father: {fileID: 1476421303}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0059999824, y: 1.347}
+  m_AnchoredPosition: {x: 0.005009532, y: 1.347}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031891688
@@ -5437,7 +5463,7 @@ GameObject:
   - component: {fileID: 2075879853}
   m_Layer: 5
   m_Name: SphereButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

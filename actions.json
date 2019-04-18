@@ -45,6 +45,14 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/MovePlayer",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/default/in/RotatePlayer",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -496,7 +504,9 @@
       "/actions/bodybasedUI/in/SkeletonRightHand": "Skeleton (Right)",
       "/actions/bodybasedUI/in/HeadsetOnHead": "Headset on head (proximity sensor)",
       "/actions/default/in/GripPush": "Grip Push",
-      "/actions/bodybasedUI/in/GripPush": "Grip Push"
+      "/actions/bodybasedUI/in/GripPush": "Grip Push",
+      "/actions/default/in/MovePlayer": "Move",
+      "/actions/default/in/RotatePlayer": "Rotate"
     }
   ]
 }

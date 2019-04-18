@@ -10,30 +10,38 @@ public class SelectedObjectHandler : MonoBehaviour
 
     public GameObject selectedObject;
 
+    // Hands
     public Hand leftHand;
     public Hand rightHand;
 
+    // SteamVR Actions and Inputs
+    public SteamVR_Action_Boolean triggerDown;
     public SteamVR_Action_Boolean grapGrip;
     public SteamVR_Input_Sources inputLeftHand = SteamVR_Input_Sources.LeftHand;
     public SteamVR_Input_Sources inputRightHand = SteamVR_Input_Sources.RightHand;
 
+    // UI Buttons
     public Button translateButton;
     public Button rotateButton;
     public Button scaleButton;
 
+    // Raycast for Deselection
+    RaycastHit hit;
+    Ray ray;
+
     // Last left controller coordinates
     Vector3 lastLeftControllerPosition;
-    Vector3 lastLeftControllerRotation;
+    Quaternion lastLeftControllerRotation;
 
     // Last right controller coordinates
     Vector3 lastRightControllerPosition;
-    Vector3 lastRightControllerRotation;
+    Quaternion lastRightControllerRotation;
 
     // Current left controller pos and rot, current right controller pos and rot
     private Vector3 leftControllerPosition;
     private Vector3 rightControllerPosition;
-    private Vector3 leftControllerRotation;
-    private Vector3 rightControllerRotation;
+    private Quaternion leftControllerRotation;
+    private Quaternion rightControllerRotation;
 
     // last and current distance between controllers
     private float distanceOfControllers;
@@ -43,6 +51,7 @@ public class SelectedObjectHandler : MonoBehaviour
     private bool translationActive;
     private bool rotationActive;
     private bool scalingActive;
+    private bool rotationFreezed;
 
     // Sets the selected laserpointer Object, unsets if null
     public void setSelectedObject(GameObject selectedObject)
@@ -115,11 +124,12 @@ public class SelectedObjectHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(rightHand.transform.rotation);
         // Get current controller coordinates
         leftControllerPosition = leftHand.transform.position;
-        lastLeftControllerRotation = leftHand.transform.eulerAngles;
+        lastLeftControllerRotation = leftHand.transform.rotation;
         rightControllerPosition = rightHand.transform.position;
-        rightControllerRotation = rightHand.transform.eulerAngles;
+        rightControllerRotation = rightHand.transform.rotation;
         distanceOfControllers = Vector3.Distance(rightControllerPosition, leftControllerPosition);
 
         // Check if selectedOption of Menu is translation, rotation or scaling
@@ -139,9 +149,9 @@ public class SelectedObjectHandler : MonoBehaviour
 
         // Set new coordinates for next update and calculate distance between the controllers
         lastLeftControllerPosition = leftHand.transform.position;
-        lastLeftControllerRotation = leftHand.transform.eulerAngles;
+        lastLeftControllerRotation = leftHand.transform.rotation;
         lastRightControllerPosition = rightHand.transform.position;
-        lastRightControllerRotation = rightHand.transform.eulerAngles;
+        lastRightControllerRotation = rightHand.transform.rotation;
         lastDistanceOfControllers = Vector3.Distance(rightControllerPosition, leftControllerPosition);
     }
 
@@ -157,9 +167,9 @@ public class SelectedObjectHandler : MonoBehaviour
             {
                 Debug.Log("Recent and current position differ");
                 Vector3 differenceVector = new Vector3();
-                differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 5;
-                differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 5;
-                differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 5;
+                differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 10;
+                differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 10;
+                differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 10;
 
                 if (selectedObject)
                 {
@@ -172,21 +182,17 @@ public class SelectedObjectHandler : MonoBehaviour
     // Listens for the rotate event and handles the rotation of the selected object if one exists
     public void rotateSelectedObject()
     {
-        Debug.Log(grapGrip.GetState(inputRightHand));
+        
         if (grapGrip.GetState(inputRightHand))
         {
             Debug.Log("Grip button pushed down");
-            if (lastRightControllerPosition != rightControllerPosition)
+            if (lastRightControllerRotation != rightControllerRotation)
             {
-                Debug.Log("Recent and current position differ");
-                Vector3 differenceVector = new Vector3();
-                differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 50;
-                differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 50;
-                differenceVector.z = (rightControllerPosition.z - lastRightControllerPosition.z) * 50;
-
                 if (selectedObject)
                 {
-                    selectedObject.transform.eulerAngles = selectedObject.transform.eulerAngles + new Vector3(differenceVector.z, differenceVector.y, differenceVector.x);
+                    // Prototype
+                    Quaternion difference = Quaternion.Inverse(rightControllerRotation) * lastRightControllerRotation;
+                    selectedObject.transform.rotation = selectedObject.transform.rotation * difference;
                 }
             }
         }
@@ -195,27 +201,27 @@ public class SelectedObjectHandler : MonoBehaviour
     // Listens for the scale event and handles the scaling of the selected object if one exists
     public void scaleSelectedObject()
     {
-        Debug.Log(grapGrip.GetState(inputRightHand));
         if (grapGrip.GetState(inputRightHand) && grapGrip.GetState(inputLeftHand))
         {
             Debug.Log("Grip button pushed down on both controllers");
-            if (lastRightControllerPosition != rightControllerPosition || lastLeftControllerPosition != leftControllerPosition)
+            if (lastRightControllerPosition != rightControllerPosition && lastLeftControllerPosition != leftControllerPosition)
             {
                 Debug.Log("Recent and current position differ");
-                if (distanceOfControllers > lastDistanceOfControllers)
+                Debug.Log(distanceOfControllers);
+                if (distanceOfControllers > lastDistanceOfControllers && distanceOfControllers > 0.3f)
                 {
                     Debug.Log("Distance is bigger now");
                     if (selectedObject)
                     {
-                        selectedObject.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+                        selectedObject.transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
                     }
                 }
-                else if (distanceOfControllers < lastDistanceOfControllers)
+                else if (distanceOfControllers < lastDistanceOfControllers && distanceOfControllers > 0.3f)
                 {
                     Debug.Log("Distance is smaller now");
                     if (selectedObject)
                     {
-                        selectedObject.transform.localScale -= new Vector3(0.5f, 0.5f, 0.5f);
+                        selectedObject.transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
                     }
                 }
             }
