@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -141,7 +141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56723510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.047, z: -0.098000005}
+  m_LocalPosition: {x: 0, y: -0.006, z: -0.098000005}
   m_LocalScale: {x: 0.95327127, y: 0.90426916, z: 0.26305848}
   m_Children: []
   m_Father: {fileID: 1475619562}
@@ -754,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322984736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.054, z: -0.09800001}
+  m_LocalPosition: {x: 0, y: 0.054, z: -0}
   m_LocalScale: {x: 0.9532713, y: 0.90426916, z: 0.2682659}
   m_Children: []
   m_Father: {fileID: 2031891687}
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1054141865}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &322984742
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1026077469}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &324774531
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1359185719}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &429766572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2208,7 +2208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1862430746}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &765188771
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2582,7 +2582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1419692215}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &778806486
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 1534823998}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &817776828
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5685,7 +5685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraUITextElement: {fileID: 766120025}
-  viveHeadset: {fileID: 0}
+  viveHeadset: {fileID: 1549734268}
 --- !u!54 &1379576162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6613,6 +6613,7 @@ GameObject:
   - component: {fileID: 1748948362}
   - component: {fileID: 1748948364}
   - component: {fileID: 1748948363}
+  - component: {fileID: 1748948365}
   m_Layer: 5
   m_Name: CreateHoverText
   m_TagString: Untagged
@@ -6762,6 +6763,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748948361}
   m_CullTransparentMesh: 0
+--- !u!114 &1748948365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748948361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0688ebec5c0020f4eb000a6faff6cb4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1756783484
 GameObject:
   m_ObjectHideFlags: 0
@@ -6791,7 +6804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756783484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.02, z: -0.098}
+  m_LocalPosition: {x: 0, y: -0.03, z: -0.098}
   m_LocalScale: {x: 0.9532712, y: 0.90426916, z: 0.27089047}
   m_Children: []
   m_Father: {fileID: 660712820}
@@ -7134,7 +7147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2031891687
 RectTransform:
   m_ObjectHideFlags: 0
