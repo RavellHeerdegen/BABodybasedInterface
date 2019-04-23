@@ -15,17 +15,7 @@ public class BlindUIHandler : MonoBehaviour
         if (other.gameObject.CompareTag("RightHand"))
         {
             Debug.Log("Its a hand");
-            Vector3 screenPoint = viveHeadset.WorldToViewportPoint(transform.position);
-            if (screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
-            {
-                // Button is visible
-                CameraUITextElement.SetActive(false);
-            }
-            else
-            {
-                // Button is not visible
-                CameraUITextElement.SetActive(true);
-            }
+            CameraUITextElement.SetActive(true);
         }
     }
 
@@ -48,7 +38,6 @@ public class BlindUIHandler : MonoBehaviour
         Debug.Log("Colliding EEEEND");
         if (other.gameObject.CompareTag("RightHand"))
         {
-            Debug.Log("Hand stop");
             CameraUITextElement.SetActive(false);
         }
     }
