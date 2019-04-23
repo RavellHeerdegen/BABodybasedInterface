@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraUITextHandler.cs" />
+    <Compile Include="Assets\DisplayHandler.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventCaster.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventData.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ColliderEvent\ColliderEventInterfaces.cs" />
@@ -188,6 +190,7 @@
     <Compile Include="Assets\HTC.UnityPlugin\VRModule\VRModuleEvent.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\VRModule\VRModuleManager.cs" />
     <Compile Include="Assets\Scripts\ArrangeToLeftArm.cs" />
+    <Compile Include="Assets\Scripts\BlindUIHandler.cs" />
     <Compile Include="Assets\Scripts\createButtonScript.cs" />
     <Compile Include="Assets\Scripts\cubeButtonScript.cs" />
     <Compile Include="Assets\Scripts\cylinderButtonScript.cs" />

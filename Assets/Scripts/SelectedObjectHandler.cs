@@ -124,7 +124,7 @@ public class SelectedObjectHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rightHand.transform.rotation);
+        //Debug.Log(rightHand.transform.rotation);
         // Get current controller coordinates
         leftControllerPosition = leftHand.transform.position;
         lastLeftControllerRotation = leftHand.transform.rotation;
@@ -159,7 +159,7 @@ public class SelectedObjectHandler : MonoBehaviour
     public void translateSelectedObject()
     {
         // True when grip button of right controller is pressed down
-        Debug.Log(grapGrip.GetState(inputRightHand));
+        //Debug.Log(grapGrip.GetState(inputRightHand));
         if (grapGrip.GetState(inputRightHand))
         {
             Debug.Log("Grip button pushed down");
@@ -207,7 +207,7 @@ public class SelectedObjectHandler : MonoBehaviour
             if (lastRightControllerPosition != rightControllerPosition && lastLeftControllerPosition != leftControllerPosition)
             {
                 Debug.Log("Recent and current position differ");
-                Debug.Log(distanceOfControllers);
+                //Debug.Log(distanceOfControllers);
                 if (distanceOfControllers > lastDistanceOfControllers && distanceOfControllers > 0.3f)
                 {
                     Debug.Log("Distance is bigger now");
