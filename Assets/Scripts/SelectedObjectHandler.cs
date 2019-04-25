@@ -186,15 +186,26 @@ public class SelectedObjectHandler : MonoBehaviour
         if (grapGrip.GetState(inputRightHand))
         {
             Debug.Log("Grip button pushed down");
-            if (lastRightControllerRotation != rightControllerRotation)
+
+            if (selectedObject)
             {
-                if (selectedObject)
+                if (selectedObject.transform.parent == null)
                 {
-                    // Prototype of rotation
-                    Quaternion difference = Quaternion.Inverse(rightControllerRotation) * lastRightControllerRotation;
-                    Vector3 differenceInEulers = difference.eulerAngles;
-                    selectedObject.transform.Rotate(differenceInEulers.x * 25, differenceInEulers.y * 25, differenceInEulers.z * 25, Space.World);
+                    selectedObject.transform.SetParent(rightHand.transform);
+                    selectedObject.GetComponent<Rigidbody>().isKinematic = true;
+
+                    //Quaternion difference = Quaternion.Inverse(lastRightControllerRotation) * rightControllerRotation;
+                    //selectedObject.GetComponent<Rigidbody>().MoveRotation(difference);
                 }
+
+
+            }
+        } else
+        {
+            if (selectedObject && selectedObject.transform.parent)
+            {
+                selectedObject.GetComponent<Rigidbody>().isKinematic = false;
+                selectedObject.transform.SetParent(null);
             }
         }
     }

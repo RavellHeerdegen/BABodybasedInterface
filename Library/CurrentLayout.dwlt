@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 681, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 101
+  controlID: 124
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1173
     height: 771
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 15
+  controlID: 59
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1173
     height: 429
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 16
+  controlID: 60
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 429
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -210,8 +210,8 @@ MonoBehaviour:
     y: 0
     width: 939
     height: 429
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b4ccffff
-      m_LastClickedID: -13132
-      m_ExpandedIDs: ae9affff0cc6ffff8ccaffff9eccffffa8ccffffb4ccfffff8ccfffff4ffffff
+      m_SelectedIDs: 620f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0af9ffff20f9ffffd0fbffff46240000f2240000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -439,9 +439,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.278637, y: 1.8548552, z: 2.0782666}
+    m_Target: {x: -2.5530982, y: 1.4403281, z: 0.70028377}
     speed: 2
-    m_Value: {x: -1.278637, y: 1.8548552, z: 2.0782666}
+    m_Value: {x: -2.5530982, y: 1.4403281, z: 0.70028377}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -469,9 +469,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.068256944, y: -0.93173856, z: 0.25311247, w: -0.25127348}
+    m_Target: {x: -0.11095242, y: -0.62605584, z: 0.09062583, w: -0.7665055}
     speed: 2
-    m_Value: {x: -0.068256944, y: -0.93173856, z: 0.25311247, w: -0.25127348}
+    m_Value: {x: -0.11095242, y: -0.62605584, z: 0.09062583, w: -0.7665055}
   m_Size:
     m_Target: 0.1316483
     speed: 2
@@ -551,20 +551,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 89
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 89
   m_LastProjectPath: C:\Users\RavellHeerdegen\Documents\Thesis\Unity\Thesis
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: 765f0000
-    m_LastClickedID: 24438
-    m_ExpandedIDs: 00000000e25a0000185b0000865c0000885d0000d25d0000d86100002062000076e000002ae10000f4e1000000ca9a3b
+    m_SelectedIDs: d0150000
+    m_LastClickedID: 5584
+    m_ExpandedIDs: 00000000fc1000006211000096110000f2130000f61500008e160000b6170000d01d0000281e0000ae1e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +592,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e25a0000185b0000865c0000885d0000d25d00008e5e00000a5f0000d861000020620000
+    m_ExpandedIDs: 00000000fc1000006211000096110000f2130000f61500008e160000b6170000d01d0000281e0000ae1e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

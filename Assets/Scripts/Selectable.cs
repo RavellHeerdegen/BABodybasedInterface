@@ -85,6 +85,7 @@ public class Selectable : MonoBehaviour
     {
         if (this.gameObject)
         {
+            // Target of raycasthit is this and this is not selected
             if (e.target.gameObject == this.gameObject && pointed == true && selected == false)
             {
                 selected = true;
@@ -97,20 +98,31 @@ public class Selectable : MonoBehaviour
                 rend.material.shader = Shader.Find("Valve/VR/Highlight");
 
             }
+            // Target of raycasthit is this and this is selected
             else if (e.target.gameObject == this.gameObject && pointed == true && selected == true)
             {
-                selected = false;
-                // Set selectedObject in SelectedObjectHandler to null
-                if (this.gameObject)
                 GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
 
-                // Delete highlighting color
-                rend.material = normalMaterial;
-                rend.material.shader = Shader.Find("Standard");
+                forceUnselect();
+
+            } // Target of raycasthit is NOT this and no other vrobject is pointed at
+            else if ((e.target.gameObject.tag != "Button" && e.target.gameObject.tag != "SelectableVRObject") &&
+                pointed == false)
+            {
+                if (selected)
+                {
+                    GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+
+                    forceUnselect();
+                } else
+                {
+                    GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+                }
             }
         }
     }
 
+    // Forces this object to get unselected and normal material
     public void forceUnselect()
     {
         selected = false;

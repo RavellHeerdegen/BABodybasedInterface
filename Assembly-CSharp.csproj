@@ -194,7 +194,9 @@
     <Compile Include="Assets\Scripts\cylinderButtonScript.cs" />
     <Compile Include="Assets\Scripts\deleteButtonScript.cs" />
     <Compile Include="Assets\Scripts\manipulateButtonScript.cs" />
+    <Compile Include="Assets\Scripts\MenuCollisionHandler.cs" />
     <Compile Include="Assets\Scripts\rotateButtonScript.cs" />
+    <Compile Include="Assets\Scripts\rotateTarget.cs" />
     <Compile Include="Assets\Scripts\scaleButtonScript.cs" />
     <Compile Include="Assets\Scripts\Selectable.cs" />
     <Compile Include="Assets\Scripts\SelectedObjectHandler.cs" />
