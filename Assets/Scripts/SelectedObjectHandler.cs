@@ -192,7 +192,8 @@ public class SelectedObjectHandler : MonoBehaviour
                 {
                     // Prototype of rotation
                     Quaternion difference = Quaternion.Inverse(rightControllerRotation) * lastRightControllerRotation;
-                    selectedObject.transform.Rotate(difference.x * 25, difference.y * 25, difference.z * 25, Space.World);
+                    Vector3 differenceInEulers = difference.eulerAngles;
+                    selectedObject.transform.Rotate(differenceInEulers.x * 25, differenceInEulers.y * 25, differenceInEulers.z * 25, Space.World);
                 }
             }
         }
