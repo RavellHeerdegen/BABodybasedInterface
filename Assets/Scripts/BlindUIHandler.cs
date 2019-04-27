@@ -9,13 +9,27 @@ public class BlindUIHandler : MonoBehaviour
     public GameObject CameraUITextElement;
     public Camera viveHeadset;
 
+    private bool inCollision;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Colliding aaah");
         if (other.gameObject.CompareTag("RightHand"))
         {
-            Debug.Log("Its a hand");
-            CameraUITextElement.SetActive(true);
+            inCollision = true;
+
+            Vector3 screenPoint = viveHeadset.WorldToViewportPoint(transform.position);
+            if (screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
+            {
+                // Button is visible
+                CameraUITextElement.SetActive(false);
+            }
+            else
+            {
+                // Button is not visible
+                if (inCollision)
+                CameraUITextElement.SetActive(true);
+            }
         }
     }
 
@@ -24,12 +38,19 @@ public class BlindUIHandler : MonoBehaviour
         Vector3 screenPoint = viveHeadset.WorldToViewportPoint(transform.position);
         if (screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
         {
-            // Button is visible
+            // Button is visible and hand is not colliding
             CameraUITextElement.SetActive(false);
-        } else
+        }
+        else
         {
             // Button is not visible
-            CameraUITextElement.SetActive(true);
+            if (inCollision)
+            {
+                CameraUITextElement.SetActive(true);
+            } else
+            {
+                CameraUITextElement.SetActive(false);
+            }
         }
     }
 
@@ -39,6 +60,7 @@ public class BlindUIHandler : MonoBehaviour
         if (other.gameObject.CompareTag("RightHand"))
         {
             CameraUITextElement.SetActive(false);
+            inCollision = false;
         }
     }
 }

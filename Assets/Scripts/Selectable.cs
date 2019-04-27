@@ -106,19 +106,35 @@ public class Selectable : MonoBehaviour
                 forceUnselect();
 
             } // Target of raycasthit is NOT this and no other vrobject is pointed at
-            else if ((e.target.gameObject.tag != "Button" && e.target.gameObject.tag != "SelectableVRObject") &&
-                pointed == false)
-            {
-                if (selected)
-                {
-                    GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+            //else if ((e.target.gameObject.tag != "Button" && e.target.gameObject.tag != "SelectableVRObject") &&
+            //    pointed == false)
+            //{
+            //    // Check if colliding with a button
+            //    GameObject[] activeButtonsGameObject = GameObject.FindGameObjectsWithTag("Button");
+            //    bool foundCollision = false;
 
-                    forceUnselect();
-                } else
-                {
-                    GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
-                }
-            }
+            //    foreach (var button in activeButtonsGameObject)
+            //    {
+            //        if (button.GetComponent<CollisionHandler>().getIsColliding())
+            //        {
+            //            foundCollision = true;
+            //        }
+            //    }
+
+            //    if (!foundCollision)
+            //    {
+            //        if (selected)
+            //        {
+            //            GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+
+            //            forceUnselect();
+            //        }
+            //        else
+            //        {
+            //            GameObject.Find("SelectedObjectHandler").GetComponent<SelectedObjectHandler>().setSelectedObject(null);
+            //        }
+            //    }
+            //}
         }
     }
 

@@ -22,7 +22,15 @@ public class MenuCollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.transform.name == menu.transform.name)
+        if (collision.collider.transform.name == "CollisionHelper")
+        {
+            GetComponent<SteamVR_LaserPointer>().active = false;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.transform.name == "CollisionHelper")
         {
             GetComponent<SteamVR_LaserPointer>().active = false;
         }
@@ -30,7 +38,7 @@ public class MenuCollisionHandler : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.collider.transform.name == menu.transform.name)
+        if (collision.collider.transform.name == "CollisionHelper")
         {
             GetComponent<SteamVR_LaserPointer>().active = true;
         }

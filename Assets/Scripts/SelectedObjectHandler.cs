@@ -37,6 +37,9 @@ public class SelectedObjectHandler : MonoBehaviour
     Vector3 lastRightControllerPosition;
     Quaternion lastRightControllerRotation;
 
+    // Legacy selectedObject position
+    Vector3 legacySelectedObjectPosition;
+
     // Current left controller pos and rot, current right controller pos and rot
     private Vector3 leftControllerPosition;
     private Vector3 rightControllerPosition;
@@ -191,11 +194,16 @@ public class SelectedObjectHandler : MonoBehaviour
             {
                 if (selectedObject.transform.parent == null)
                 {
+                    legacySelectedObjectPosition = selectedObject.transform.position;
+
                     selectedObject.transform.SetParent(rightHand.transform);
                     selectedObject.GetComponent<Rigidbody>().isKinematic = true;
 
                     //Quaternion difference = Quaternion.Inverse(lastRightControllerRotation) * rightControllerRotation;
                     //selectedObject.GetComponent<Rigidbody>().MoveRotation(difference);
+                } else
+                {
+                    selectedObject.transform.position = legacySelectedObjectPosition;
                 }
 
 
