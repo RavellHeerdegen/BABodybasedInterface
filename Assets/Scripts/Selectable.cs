@@ -22,6 +22,7 @@ public class Selectable : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
 
+        // Add pointer events for pointer
         laserPointer = GameObject.Find("RightHand").gameObject.GetComponent<SteamVR_LaserPointer>();
         laserPointer.PointerIn += PointerInside;
         laserPointer.PointerOut += PointerOutside;

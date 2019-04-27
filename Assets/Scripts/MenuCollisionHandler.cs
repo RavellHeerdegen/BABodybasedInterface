@@ -22,24 +22,18 @@ public class MenuCollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.transform.name == "CollisionHelper")
+        if (collision.collider.transform.Equals(menu.transform))
         {
-            GetComponent<SteamVR_LaserPointer>().active = false;
-        }
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.collider.transform.name == "CollisionHelper")
-        {
+            Debug.Log("Deactivating Laserpointer");
             GetComponent<SteamVR_LaserPointer>().active = false;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.collider.transform.name == "CollisionHelper")
+        if (collision.collider.transform.Equals(menu.transform))
         {
+            Debug.Log("Reactivating Laserpointer");
             GetComponent<SteamVR_LaserPointer>().active = true;
         }
     }

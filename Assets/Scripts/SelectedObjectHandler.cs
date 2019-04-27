@@ -165,10 +165,9 @@ public class SelectedObjectHandler : MonoBehaviour
         //Debug.Log(grapGrip.GetState(inputRightHand));
         if (grapGrip.GetState(inputRightHand))
         {
-            Debug.Log("Grip button pushed down");
             if (lastRightControllerPosition != rightControllerPosition)
             {
-                Debug.Log("Recent and current position differ");
+                // Calculate difference between last and current position
                 Vector3 differenceVector = new Vector3();
                 differenceVector.x = (rightControllerPosition.x - lastRightControllerPosition.x) * 10;
                 differenceVector.y = (rightControllerPosition.y - lastRightControllerPosition.y) * 10;
@@ -185,31 +184,25 @@ public class SelectedObjectHandler : MonoBehaviour
     // Listens for the rotate event and handles the rotation of the selected object if one exists
     public void rotateSelectedObject()
     {
-        
         if (grapGrip.GetState(inputRightHand))
         {
-            Debug.Log("Grip button pushed down");
-
             if (selectedObject)
             {
+                // No parent
                 if (selectedObject.transform.parent == null)
                 {
                     legacySelectedObjectPosition = selectedObject.transform.position;
 
                     selectedObject.transform.SetParent(rightHand.transform);
                     selectedObject.GetComponent<Rigidbody>().isKinematic = true;
-
-                    //Quaternion difference = Quaternion.Inverse(lastRightControllerRotation) * rightControllerRotation;
-                    //selectedObject.GetComponent<Rigidbody>().MoveRotation(difference);
-                } else
+                } else // Parent set but rotation still active
                 {
                     selectedObject.transform.position = legacySelectedObjectPosition;
                 }
-
-
             }
         } else
         {
+            // Parent set but rotation inactive
             if (selectedObject && selectedObject.transform.parent)
             {
                 selectedObject.GetComponent<Rigidbody>().isKinematic = false;
@@ -223,22 +216,19 @@ public class SelectedObjectHandler : MonoBehaviour
     {
         if (grapGrip.GetState(inputRightHand) && grapGrip.GetState(inputLeftHand))
         {
-            Debug.Log("Grip button pushed down on both controllers");
             if (lastRightControllerPosition != rightControllerPosition && lastLeftControllerPosition != leftControllerPosition)
             {
-                Debug.Log("Recent and current position differ");
-                //Debug.Log(distanceOfControllers);
+                // Distance is bigger than before
                 if (distanceOfControllers > lastDistanceOfControllers && distanceOfControllers > 0.3f)
                 {
-                    Debug.Log("Distance is bigger now");
                     if (selectedObject)
                     {
                         selectedObject.transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
                     }
                 }
+                // Distance is lower than before
                 else if (distanceOfControllers < lastDistanceOfControllers && distanceOfControllers > 0.3f)
                 {
-                    Debug.Log("Distance is smaller now");
                     if (selectedObject)
                     {
                         selectedObject.transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
