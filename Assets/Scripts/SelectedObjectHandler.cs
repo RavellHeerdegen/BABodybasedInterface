@@ -37,7 +37,7 @@ public class SelectedObjectHandler : MonoBehaviour
     Vector3 lastRightControllerPosition;
     Quaternion lastRightControllerRotation;
 
-    // Legacy selectedObject position
+    // Legacy selectedObject position and Parent object
     Vector3 legacySelectedObjectPosition;
 
     // Current left controller pos and rot, current right controller pos and rot
@@ -188,12 +188,31 @@ public class SelectedObjectHandler : MonoBehaviour
         {
             if (selectedObject)
             {
+                //// No parent
+                //if (selectedObject.transform.parent == null)
+                //{
+                //    // legacySelectedObjectPosition = selectedObject.transform.position;
+
+                //    selectedObjectParent = new GameObject();
+                //    selectedObjectParent.transform.rotation = Quaternion.Euler(Vector3.zero);
+                //    selectedObjectParent.transform.position = selectedObject.transform.position;
+                //    selectedObjectParent.transform.rotation = rightHand.transform.rotation;
+
+                //    selectedObject.transform.SetParent(selectedObjectParent.transform);
+                //    selectedObject.GetComponent<Rigidbody>().isKinematic = true;
+                //}
+                //else // Parent set but rotation still active
+                //{
+                //    selectedObject.transform.rotation *= rightHand.transform.rotation;
+                //}
+
                 // No parent
                 if (selectedObject.transform.parent == null)
                 {
                     legacySelectedObjectPosition = selectedObject.transform.position;
 
                     selectedObject.transform.SetParent(rightHand.transform);
+                    rightHand.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
                     selectedObject.GetComponent<Rigidbody>().isKinematic = true;
                 } else // Parent set but rotation still active
                 {
@@ -207,6 +226,7 @@ public class SelectedObjectHandler : MonoBehaviour
             {
                 selectedObject.GetComponent<Rigidbody>().isKinematic = false;
                 selectedObject.transform.SetParent(null);
+                rightHand.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             }
         }
     }
