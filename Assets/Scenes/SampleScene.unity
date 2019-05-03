@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -866,6 +866,56 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9083782159112652407, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000010760719
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782159112652407, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000035871466
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782159112652407, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.28733024
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3957287
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.43531162
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03300276
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8079687
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083782158961672813, guid: 994545598cc690d49b79285ebad0f7f5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9083782157672528877, guid: 994545598cc690d49b79285ebad0f7f5, type: 3}
     - {fileID: 9083782158072211095, guid: 994545598cc690d49b79285ebad0f7f5, type: 3}
@@ -1353,6 +1403,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &495872722 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9083782158607897136, guid: 994545598cc690d49b79285ebad0f7f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 296654567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498572370
 GameObject:
   m_ObjectHideFlags: 0
@@ -5688,90 +5744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018581a6a9040b34d83404b882e892a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceForDirection: 0
-  disableOtherControlsOnActive: 0
-  affectOnFalling: 0
-  controlOverrideObject: {fileID: 0}
-  controller: {fileID: 0}
-  bodyPhysics: {fileID: 0}
-  controllerEvents: {fileID: 0}
-  otherObjectControl: {fileID: 0}
-  controlledGameObject: {fileID: 0}
-  setControlOverrideObject: {fileID: 0}
-  directionDevice: {fileID: 0}
-  previousDeviceForDirection: 0
-  currentAxis: {x: 0, y: 0}
-  storedAxis: {x: 0, y: 0}
-  currentlyFalling: 0
-  modifierActive: 0
-  controlledGameObjectPreviousY: 0
-  controlledGameObjectPreviousYOffset: 0.01
-  coordinateAxis: 1
-  primaryActivationButton: 9
-  actionModifierButton: 10
-  axisDeadzone: {x: 0.2, y: 0.2}
-  touchpadFirstChange: 0
-  otherTouchpadControlEnabledState: 0
-  otherTouchpadControlEnabledStateSet: 0
-  coordniateButtonAlias: 0
 --- !u!65 &1344264638
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6773,8 +6745,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476421299}
-  m_LocalRotation: {x: 0.71636915, y: -0.6924721, z: 0.048874773, w: 0.07006401}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01679617}
+  m_LocalRotation: {x: 0.7244295, y: -0.6844599, z: 0.06869202, w: 0.044698287}
+  m_LocalPosition: {x: 0, y: 0, z: 0.022}
   m_LocalScale: {x: 0.90090084, y: 0.90090054, z: 0.9009006}
   m_Children:
   - {fileID: 660712820}
@@ -6789,10 +6761,10 @@ RectTransform:
   - {fileID: 1258073755}
   m_Father: {fileID: 1679867811}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 9.675, y: 181.568, z: 268.19598}
+  m_LocalEulerAnglesHint: {x: 9.137, y: 177.77501, z: 266.572}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.12004615, y: 0.17810781}
+  m_AnchoredPosition: {x: -0.165, y: 0.19}
   m_SizeDelta: {x: 0.5, y: 0.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476421305
@@ -6807,7 +6779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ace182fe34ba24bae46e224cc5903e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: {fileID: 1679867810}
 --- !u!54 &1476421306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7283,6 +7254,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 296654567}
   m_PrefabAsset: {fileID: 0}
+--- !u!1818360609 &1679867812
+RotationConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679867810}
+  m_Enabled: 1
+  m_Weight: 0.507
+  m_RotationAtRest: {x: 0, y: 0, z: 33.39638}
+  m_RotationOffset: {x: 86.92637, y: 179.99997, z: 167.17592}
+  m_AffectRotationX: 0
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 495872722}
+    weight: 1
 --- !u!1 &1748948361
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,87 +8231,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018581a6a9040b34d83404b882e892a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deviceForDirection: 0
-  disableOtherControlsOnActive: 0
-  affectOnFalling: 0
-  controlOverrideObject: {fileID: 0}
-  controller: {fileID: 0}
-  bodyPhysics: {fileID: 0}
-  controllerEvents: {fileID: 0}
-  otherObjectControl: {fileID: 0}
-  controlledGameObject: {fileID: 0}
-  setControlOverrideObject: {fileID: 0}
-  directionDevice: {fileID: 0}
-  previousDeviceForDirection: 0
-  currentAxis: {x: 0, y: 0}
-  storedAxis: {x: 0, y: 0}
-  currentlyFalling: 0
-  modifierActive: 0
-  controlledGameObjectPreviousY: 0
-  controlledGameObjectPreviousYOffset: 0.01
-  coordinateAxis: 1
-  primaryActivationButton: 9
-  actionModifierButton: 10
-  axisDeadzone: {x: 0.2, y: 0.2}
-  touchpadFirstChange: 0
-  otherTouchpadControlEnabledState: 0
-  otherTouchpadControlEnabledStateSet: 0
-  coordniateButtonAlias: 0
