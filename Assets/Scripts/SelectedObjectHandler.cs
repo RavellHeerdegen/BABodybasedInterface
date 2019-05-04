@@ -130,7 +130,7 @@ public class SelectedObjectHandler : MonoBehaviour
         //Debug.Log(rightHand.transform.rotation);
         // Get current controller coordinates
         leftControllerPosition = leftHand.transform.position;
-        lastLeftControllerRotation = leftHand.transform.rotation;
+        leftControllerRotation = leftHand.transform.rotation;
         rightControllerPosition = rightHand.transform.position;
         rightControllerRotation = rightHand.transform.rotation;
         distanceOfControllers = Vector3.Distance(rightControllerPosition, leftControllerPosition);
