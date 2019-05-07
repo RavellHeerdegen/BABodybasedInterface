@@ -30,15 +30,15 @@ public class HandRotationTracker : MonoBehaviour
     {
         // Get current controller coordinates
         leftControllerPosition = leftHand.transform.position;
-        leftControllerRotation = leftHand.transform.rotation;
+        leftControllerRotation = leftHand.transform.localRotation;
 
         // Calculate difference between last and current position
         Quaternion difference = new Quaternion();
         difference = Quaternion.Inverse(lastLeftControllerRotation) * leftControllerRotation;
 
-        transform.rotation *= new Quaternion(-difference.z, -difference.x * 0.0f, difference.y * 0.0f, 1);
+        transform.localRotation *= new Quaternion(difference.x * 0.5f, difference.y * 0.0f, difference.z * 0.0f, 1);
 
         lastLeftControllerPosition = leftHand.transform.position;
-        lastLeftControllerRotation = leftHand.transform.rotation;
+        lastLeftControllerRotation = leftHand.transform.localRotation;
     }
 }
