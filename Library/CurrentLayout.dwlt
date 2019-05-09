@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 59
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 337
     height: 466
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 113
+  controlID: 130
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 114
+  controlID: 131
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,20 +336,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\RavellHeerdegen\Documents\Thesis\Unity\Thesis
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ce190000
-    m_LastClickedID: 6606
-    m_ExpandedIDs: 000000008e0f0000221100007c110000f21200003c1300007c130000d81300002e1400004e140000a81400005215000056150000c61500000a170000361d0000501e0000021f0000ca1f000006470000084700000a4700000c47000000ca9a3b
+    m_SelectedIDs: 64640000
+    m_LastClickedID: 25700
+    m_ExpandedIDs: 00000000b2630000fe640000466500009e660000d6660000086700004c6700008c670000a6670000da6700004668000048680000a8680000b6690000d66e0000b46f000042700000f4700000b8770000ba770000bc770000be77000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +377,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e0f0000221100007c110000f21200003c1300007c130000d81300002e1400004e140000a81400005215000056150000c61500000a170000361d0000501e0000021f0000ca1f000006470000084700000a4700000c470000
+    m_ExpandedIDs: 00000000b2630000fe640000466500009e660000d6660000086700004c6700008c670000a6670000da6700004668000048680000a8680000b6690000d66e0000b46f000042700000f4700000b8770000ba770000bc770000be770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,9 +496,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d6fbffff
+      m_SelectedIDs: 52c7ffff
+      m_LastClickedID: -14510
+      m_ExpandedIDs: 28c6ffff3ec6ffff52c7ffff7cc7ffffa0c7ffffb8c7ffffbec7ffff56c8ffff88c8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.6134, y: 3.8025103, z: -0.7635484}
+    m_Target: {x: -5.00049, y: -1.4900604, z: -6.1597795}
     speed: 2
-    m_Value: {x: 8.6134, y: 3.8025103, z: -0.7635484}
+    m_Value: {x: -5.00049, y: -1.4900604, z: -6.1597795}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -584,13 +584,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.043222085, y: 0.8280371, z: 0.064452924, w: 0.5552768}
+    m_Target: {x: 0.054692183, y: -0.936926, z: 0.17080817, w: 0.300005}
     speed: 2
-    m_Value: {x: -0.043222085, y: 0.8280371, z: 0.064452924, w: 0.5552768}
+    m_Value: {x: 0.054692183, y: -0.936926, z: 0.17080817, w: 0.300005}
   m_Size:
-    m_Target: 11.365491
+    m_Target: 9.214162
     speed: 2
-    m_Value: 11.365491
+    m_Value: 9.214162
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -638,10 +638,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -459
-    m_HBaseRangeMax: 459
-    m_VBaseRangeMin: -214.5
-    m_VBaseRangeMax: 214.5
+    m_HBaseRangeMin: -367.2
+    m_HBaseRangeMax: 367.2
+    m_VBaseRangeMin: -171.6
+    m_VBaseRangeMax: 171.6
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
-  m_LastWindowPixelSize: {x: 918, y: 446}
+  m_LastWindowPixelSize: {x: 1147.5, y: 557.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
