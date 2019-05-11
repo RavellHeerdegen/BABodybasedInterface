@@ -1,0 +1,304 @@
+\section{Konzeption und Entwicklung}
+
+\subsection{Grundlagen}
+Seit dem Beginn der Entwicklung von Lösungen für \textit{Virtual Reality} (VR) in den fünfziger Jahren des zwanzigsten Jahrhunderts, gab es stetig neue und innovative Konzepte, um nicht nur mit, sondern auch in der virtuellen Welt zu interagieren~\cite{virtualreality}. In diesem Kapitel wird zunächst erläutert, um was es sich bei VR genau handelt. Danach wird näher auf \textit{head-mounted displays} (HMDs) eingegangen, welche nach dem ersten Prototypen aus dem Jahre 1968 kontinuierlich weiterentwickelt wurden und heute ein vielversprechendes Ein- und Ausgabegerät für Informationen darstellen~\cite{vrfuture}. Daran anschließend folgen grundlegende Informationen zu Eingabegeräten wie \textit{tracking devices} oder \textit{vision-based devices}, welche ebenfalls in der Konzeptions-Phase für das zu entwickelnde Interface relevant waren. Desweiteren werden grundlegende Details zur Ergonomie aufgeführt, zusammen mit Möglichkeiten und Grenzen durch den menschlichen Körper. Abschließend wird auf \textit{3D user interfaces} (3DUIs) und \textit{body-based interfaces} (BIs) eingegangen, wodurch der Rahmen für das Grundverständnis dieser Arbeit gegeben wird.
+
+\subsubsection{Virtual reality}
+VR erfährt seit der technischen Einführung im Jahre 1968 ein andauerndes Interesse. Sowohl in der Erforschung neuer Meilensteine als auch in der Verwendung der bereits vorhandenen Methoden und Mittel im Alltag. Grundlegend ist VR eine interaktive Simulation, bei welcher die menschlichen Sinne verstärkt oder manipuliert werden, um während der Benutzung mit einem Computer, einem Benutzer das Gefühl zu geben, tatsächlich in einer virtuellen Umgebung~\cite{virtualreality} zu sein. Einerseits kann der gesamte Körper des Benutzers in die virtuelle Umgebung übertragen werden, andererseits reicht es teilweise aus, bestimmte Körperteile wie z.B.~die Hände~\cite{handtracking} oder die Finger~\cite{fingertracking} virtuell abzubilden. Die virtuelle Umgebung besteht dabei aus verschiedenen Objekten, welche untereinander in Beziehung stehen können. Wahrgenommen werden können die platzierten Objekte visuell, auditiv oder haptisch~\cite{virtualreality}. Das bedeutet, dass Objekte entweder der reinen Visualisierung dienen, z.B.~ein Foto in einem Raum, die Akustik unterstützen, z.B.~Windgeräusche, oder Interaktionen zulassen wie z.B.~ein Würfel, welcher geworfen werden kann. Dadurch soll dem Benutzer ein immersives Gefühl und eine sogenannte physische als auch mentale Präsenz vermittelt werden~\cite{hmds}. Physische Präsenz bedeutet, dass der Benutzer das Gefühl bekommt, er sei mit seinem Körper in der virtuellen Welt. Mentale Präsenz hingegen bedeutet Ansprüche und Erwartungen an die virtuelle Umgebung zu stellen, und somit ein Teilhabe-Gefühl zu entwickeln. Die mentale Präsenz kann dabei unterschiedliche Stadien annehmen.\\
+Von einer puren Verbundenheit mit einem Computer, bis hin zum Gefühl, dass die virtuelle Welt real ist. Je nach Anwendung müssen physische und mentale Präsenz einen bestimmten Grad erreichen. Dafür notwendig ist das sensorische Feedback. Feedback wird größtenteils visuell vermittelt, z.B.~durch das Einfärben eines Objektes bei einer Selektion. Feedback kann jedoch auch haptisch oder auditiv übertragen werden. Ebenfalls wichtig, ist die Perspektive mit der die virtuelle Umgebung wahrgenommen wird. Die Erste-Person Ansicht bietet dabei die natürlichste Form, u.a.~ möglich sind die Zweite-Person Ansicht, sowie die Dritte-Person Ansicht. Letztere auch bekannt als Vogel- oder ISO-Perspektive, dient dem Überblick einer Situation oder Umgebung aus der Ferne~\cite{virtualreality}.\\
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/virtualreality}
+\centering
+\caption{Virtual-Reality Anwendung SwordPlay~\cite{anintroductionto3dspacial}}
+\label{fig:vranwendung}
+\end{figure}
+
+\subsubsection{Head-mounted displays}
+HMDs sind Geräte, welche auf oder an dem Kopf eines Benutzers platziert werden~\cite{hmds}. HMDs unterscheiden sich u.a.~in der Qualität der Auflösung, Farbdarstellung, Sichtfeldweite, Interfacedarstellung sowie Beleuchtung~\cite{hmdsinmedicine}. Die meisten aktuell bekannten Geräte wie die Oculus Rift oder HTC Vive, verwenden stereoskopische Anzeigen und Aufzeichnungssysteme, um die Kopfbewegungen eines Benutzers zu erfassen und dreidimensionale Bilder darstellen zu können. Um die genaue Position des Kopfes des Benutzers im virtuellen Raum berechnen zu können, kommen Beschleunigungssensoren und Gyroskope zum Einsatz, welche in die HMDs direkt integriert werden~\cite{hmds}.\\
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.75]{Bilder/Hauptteil/viveheadset}
+\centering
+\caption{HTC Vive Headset}
+\label{fig:hmds}
+\end{figure}
+
+\noindent Durch HMDs können u.a.~kognitive, psychomotorische oder affektive Fähigkeiten erlernt und verbessert werden. Im Falle von kognitiven Fähigkeiten kann z.B.~das Erinnerungs\-vermögen verbessert~\cite{hmdsineducation} werden. Um eine positive Erfahrung während der Benutzung eines HMDs zu gewährleisten, ist die sogenannte \textit{Field of View} (FOV) entscheidend. Exemplare welche vor dem Jahre 2013 erschienen sind, besaßen einen Sichtradius von 25 bis 60 Grad. Der natürliche Sichtradius eines Menschen befindet sich bei 180 Grad. Aktuelle Geräte erreichen eine FOV von über 100 Grad, was sich positiv auf die Erfahrung und dem damit verbundenen Realitätsgefühl auswirkt. Ebenfalls nennenswert ist der Begriff \textit{motion}- bzw. \textit{cybersickness}. Darunter wird ein Übelkeits- oder Schwindelgefühl verstanden, welches bei der Verwendung von HMDs in Verbindung mit VR auftreten kann. \textit{Motionsickness} kann die Immersion beeinträchtigen und dadurch negative Erfahrungen mit HMDs und VR begünstigen. Auch kann \textit{motionsickness} vom Alter, der Erfahrung und des Geschlechts des Benutzers abhängen, was durch diverse Studien nachgewiesen wurde~\cite{hmdsineducation}. Durch die stetige Weiterentwicklung von HMDs, finden die selbigen Anwendung in vielerlei Bereichen, wie z.B.~in der Bildung~\cite{hmdsineducation}, Psychologie~\cite{hmdsinpsychology}, Medizin~\cite{hmdsinmedicine} oder in der 3D-Modellierung~\cite{hmdsinmodeling}.
+
+\subsubsection{Eingabegeräte}
+Eingabegeräte sind auch in VR erforderlich, um mit virtuell erstellten Umgebungen interagieren zu können. Je nach Anwendungskontext und Aufgabenstellung können unterschiedliche Eingabegeräte zum Einsatz kommen. 
+Nach~\cite{modernworldinputdevices} kann jedes Eingabegerät einer vordefinierten Kategorie zugeordnet werden. Ortega et al.~ definieren dazu elf Kategorien. Für diese Arbeit relevant aufgrund der Möglichkeit das Eingabegerät am Körper zu tragen, waren die Kategorien \textit{inertial-sensing}, \textit{data gloves}, \textit{vision-based devices} und \textit{tracking devices}. Bei
+\textit{inertial-sensing} werden verschiedene Funktionen durch Druck- bzw.~Trägheitserfassung ausgelöst.~\cite{skinput} haben dafür ein System entwickelt, welches durch Druck durch einen oder mehrere Finger bedient werden kann. Je nach Druckstärke und Druckpunkt, können damit die im System verbauten Vibrationssensoren angeregt und somit unterschiedliche Interaktionen durchgeführt werden. \textit{Vision-based devices} hingegen nutzen Projektoren und Sensoren, um z.B.~Gesten oder die Umgebung zu erfassen, um daraus Eingabe- bzw.~Ausgabeinformationen zu erstellen. Als Beispiel dient das durch Gesten gesteuerte System von~\cite{sixthsense}. Die am Kopf des Benutzers befestigte Kamera erfasst die Hände und die dargestellten Gesten. Der am Kopf befestigte Projektor wirft Informationen und Interaktionselemente auf Oberflächen aus der Umgebung. Ein weiteres Beispiel für ein auf Gesten und Projektoren basierendes System ist LightSpace~\cite{lightspace}. Bei LightSpace kommen jedoch im Vergleich zu SixthSense keine Marker an Fingern oder Umgebung vor. Ein durch einen \textit{data glove} gesteuertes System wurde von~\cite{dataglove} entwickelt. Der Handschuh besitzt für jeden Finger eigene Sensoren, welche nicht nur die Bewegungen und dessen Geschwindigkeit, sondern auch die Orientierung der Finger und Hand messen und erfassen können. Im Vergleich zu den \textit{vision-based devices}, kommen beim \textit{data glove} keine Projektoren zum Einsatz, da die Informationen direkt vom Handschuh in die an einem Computer laufenden Anwendungen übertragen werden. Unter die \textit{tracking devices} fallen u.a.~\textit{finger-tracking}, \textit{hand-tracking}, \textit{head-tracking}, \textit{body-tracking} oder \textit{controller-tracking devices}. Ein System, welches \textit{head-tracking} verwendet, um 3DUIs darzustellen, ist das Projekt \textit{the personal cockpit} von~\cite{thepersonalcockpit}. Das von Ens et al. entwickelte System, umfasst ein HMD in Form einer Brille und darin verbaute Sensoren. Die verbauten Sensoren erfassen die Richtung in welche der Träger der Brille schaut, und stellt daraufhin verschiedene Interaktionselemente oder Informationen dar. Ein populäres Eingabegerät, welches mit \textit{controller-tracking}, VR und HMDs in Verbindung gesetzt wird, ist z.B.~der HTC Vive Controller, zu sehen in Abbildung \ref{fig:vivecontroller}.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.75]{Bilder/Hauptteil/vivecontroller}
+\centering
+\caption{HTC Vive Controller}
+\label{fig:vivecontroller}
+\end{figure}
+
+Durch sogenannte \textit{Positioner}, welche im Raum um den Benutzer herum platziert werden, werden nicht nur die Position und Rotation der Controller, sondern wenn gewünscht der gesamte Körper eines Benutzers erfasst. Knöpfe und Touchpads dienen als Eingabemechanismen und können zusammen mit Bewegung und Rotation der Controller sogar Gesten abbilden und so mit einer 3D-Umgebung interagieren~\cite{wearablehtcvive}. Aufgrund der zahlreichen Einsatzmöglichkeiten, der für VR ausgelegten Hardware, Gestenerkennung und \textit{body-tracking}, sowie der unmittelbaren Verfügbarkeit boten sich die HTC Vive Controller in Kombination mit dem HTC Vive Headset für diese Arbeit am Besten an. Tabelle \ref{tab:eingabesysteme} listet die beschriebenen Eingabearten und dazugehörigen Systeme zusammengefasst auf.
+
+\begin{table}[h]
+\begin{center}
+	\begin{tabular}{| l | l |}
+	\hline
+		\multicolumn{1}{|c|}{\textbf{Eingabeart}} & \multicolumn{1}{|c|}{\textbf{Beispielsystem}} \\[0.3cm] \hline
+		\textit{inertial-sensing} & Skinput \\ \hline
+		\textit{data gloves} & DG5 Vhand Data Glove 2.0 \\ \hline
+		\textit{vision-based devices} & SixthSense, LightSpace \\ \hline
+		\textit{tracking devices} & The personal cockpit, HTC vive controller \\ \hline
+	\end{tabular}
+	\caption{Eingabearten und Systeme}
+	\label{tab:eingabesysteme}
+\end{center}
+\end{table}
+
+\subsubsection{Ergonomie}
+Um mit virtuellen Objekten oder Umgebungen interagieren zu können, werden u.a.~Interfaces benötigt, welche je nach Anwendung unterschiedlich in die 3D-Umgebung eingebunden werden. Dabei sollten nicht nur die Art der Interaktionen, sondern u.a.~auch der menschliche Körper mit seinen ergonomischen Möglichkeiten und Limitierungen berücksichtigt werden.
+Nur somit ist es möglich, Interfaces zu entwickeln, welche komfortabel und effektiv genutzt werden können. Unterschiedliche Interaktionen erfordern unterschiedliche Bewegungen, welche wiederum unterschiedlich komplex und andauernd sein können. Die Interaktionen haben dabei verschieden stark ausgeprägte Attribute wie Genauigkeit, Geschwindigkeit, Richtung und Dauer. Aufgrund der menschlichen Physiologie können bestimmte Interaktionen län\-ger und präziser oder nur bedingt und umständlich umgesetzt werden, was bei der Implementierung von 3DUIs in VR zu beachten ist~\cite{theoryandpracticebook}. Die menschliche Hand z.B.~bietet durch ihre praktikable Ergonomie eine umfangreiche Palette an Einsatzmöglichkeiten. Darunter das Greifen oder Halten eines Gegenstandes, oder die Möglichkeit Gesten und Posen darzustellen. Ein unangenehmes Maß an Kraft, Dauer und Wiederholung einer Aufgabe, kann sich negativ auf die Umsetzung auswirken, gleich wie gut ein Interface entwickelt wurde. Ein weiterer wichtiger Aspekt in der Gestaltung von 3DUIs unter Berücksichtigung der Ergonomie des Menschen, ist das sogenannte \textit{Gorilla arm syndrome}. Darunter wird das Ermüden der Arme durch lang andauernde und unbequeme Posen verstanden. Interfaces, welche auf Augenhöhe oder sogar darüber platziert sind, begünstigen den Gorilla-Arm Effekt. Darum sollten Interfaces möglichst niedrig gehalten oder Interaktionen näher an den Körper gebracht werden. Das Greifen eines weit entfernten Objektes könnte bspw.~durch eine Pointer-Technik ermöglicht werden, um das Ausstrecken des Armes zu vermeiden~\cite{theoryandpracticebook,consumedindurance}. Ein weiteres Anzeichen für Ermüdung ist ein Haltungswechsel. Deshalb sollten Posen bevorzugt werden, welche komfortabel und energiesparend durchgeführt werden können und somit, die Bequemlich- und Leichtigkeit unterstützen. Interfaces, welche sich am Arm oder auf der Hand befinden, haben dabei in Studien großen Zuspruch gefunden, da sich Arm- bzw.~Handinterfaces ergonomisch günstig anbieten und viel Raum als auch Möglichkeiten für Interaktionen bieten~\cite{implicationsoflocation}.
+Komfort ist jedoch nicht gewährleistet unter reiner Berücksichtigung der aufgeführten Aspekte. Komfort ist ebenfalls bedingt, durch die Darstellung der Interfaces, bezogen auf Form und Gestalt~\cite{theoryandpracticebook}.
+
+\subsubsection{3D Benutzeroberflächen}
+3DUIs erfahren seit der Alltagstauglichkeit von VR stetig wachsenden Zuspruch und Anwendung. 3DUIs unterscheiden sich in erster Linie von zweidimensionalen UIs durch die gegebenen \textit{degree of freedom} (DOF)~\cite{whatuserinterfacetouse,asurveyon3dobjectmanipulation,theoryandpracticebook}. Die DOF geben an, inwieweit in einer virtuellen Umgebung mit virtuellen Objekten interagiert werden kann, bzw.~wie stark die Operationsvielfalt im virtuellen Raum ausgeprägt ist. Bei 2DUIs beschränkt sich die Interaktion auf Operationen in x und y Richtung. Das bedeutet, dass 2DUIs wie z.B.~ein Dateimanager und dessen Elemente nur in der x und y Richtung positioniert werden können~\cite{issuesandbenefitsofusing3d}. Bei 3DUIs hingegen kommt die Tiefe durch die z-Achse hinzu, wodurch sowohl dreidimensionale Manipulation als auch Rotation ermöglicht werden~\cite{anintroductionto3dspacial}. Die dazugekommene Tiefe kann jedoch auch zu höheren Fehlerraten in der Ausführung von Aufgaben führen. Bspw.~beim Selektieren eines Objektes, welches sich dicht neben und kaum hinter einem anderen Objekt befindet. Die Bevorzugung von 3DUIs gegenüber 2DUIs hängt demnach von der Anwendung und dessen Kontext ab.~\cite{issuesandbenefitsofusing3d} haben bspw.~nachgewiesen, dass sich ein 3D-Dateimanager, aufgezeigt in Abbildung \ref{fig:3dinterface}, in Verbindung mit VR nur anbietet, wenn die Darstellung der Dateien durch große und auffällig eingefärbte Symbole gegeben ist.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.75]{Bilder/Hauptteil/3duserinterface}
+\centering
+\caption{3D Dateimanager~\cite[p.~243]{issuesandbenefitsofusing3d}}
+\label{fig:3dinterface}
+\end{figure}
+
+\noindent Eine Eigenschaft die 3DUIs gegenüber 2DUIs mit sich bringen, ist die Vielfalt der Darstellung und Interaktion. So können 3DUIs bspw.~frei in der virtuellen Umgebung platziert~\cite{anintroductionto3dspacial}, und/oder durch Gesten~\cite{introduction3dgesturalinterfaces} gesteuert werden. Die Komplexität von 3DUIs reicht von Interfaces welche sich bei Kopfdrehungen während des Tragens eines HMD mit bewegen, um die Position des 3DUI zu ändern, bis hin zu komplexen Modellierungs- oder Designinteraktionen. Eingesetzt werden 3DUIs u.a.~auch in den Bereichen Videospiele, Unterhaltung, Simulation, Bildung oder der Medizin~\cite{theoryandpracticebook}. Da sich 3DUIs so unterschiedlich komplex und vielfältig im Design ausprägen können, wirken sich die selbigen auch unterschiedlich auf die \textit{user experience} (UX) aus, welche der Benutzer beim Interagieren mit den Interfaces erlangt. Um eine einfache und positive Nutzung von 3DUIs sicherstellen zu können, haben~\cite{interactionpatterns} bspw.~Interaktionsmuster definiert, welche global eingesehen werden können und dadurch einen Standard in der Entwicklung von dreidimensionalen Interfaces bieten sollen.
+
+\subsubsection{Körperbasierte Interfaces}
+BIs versuchen sowohl die Ein- als auch die Ausgabe von Informationen über den menschlichen Körper zu bewerkstelligen~\cite{implicationsoflocation}. Das Ziel ist, den menschlichen Körper so zu instrumentalisieren, sodass keine externen Geräte mehr wie z.B.~Smartphones benötigt werden, um Daten verarbeiten, Anwendungen nutzen oder mit anderen Menschen global kommunizieren zu können~\cite{skinput}. Berücksichtigt werden sollte dabei nicht nur die Ergonomie, sondern auch die Nutzergruppe, für die ein BI entwickelt wird.~\cite{implicationsoflocation} haben dazu herausgefunden, dass bestimmte Positionen für körperbasierte Interfaces von Frauen und Männern unterschiedlich streng empfunden wurden. Für die anwesenden Frauen z.B.~, war ein Interface im Schulter- oder Oberarmbereich unvorstellbar, da es zu privat oder unangenehm wäre. Allgemein akzeptabel und angenehm, war bei dem Experiment wiederum der Unterarm- und Handbereich. Durch die emotionale Verbundenheit zum eigenen Körper ist es möglich, verschiedenste Arten von körperbasierten Interfaces anzuwenden und zu entwickeln. Die Vielfältigkeit zeigt sich anhand der folgenden Beispiele. Skinput~\cite{skinput} ist ein BI, welches die durch den Körper geleiteten Impulse eines Fingerschlages aufzeichnet und interpretiert. Je nach Stärke und Dauer eines Impulses, können unterschiedliche Aktionen durchgeführt werden. OmniTouch~\cite{omnitouch} hingegen, zu sehen in Abbildung \ref{fig:omnitouch}, nutzt eine Microsoft Kinect als Tiefenkamera sowie einen Projektor welche auf der Schulter des Benutzers befestigt werden, um Interfaces ausgehend von der Position des Trägers, beliebig auf Hände und Arme zu projizieren. Die Finger des Trägers werden dabei aufgezeichnet. Durch Gesten oder simple Berührungen auf dem BI können Benutzer z.B.~Objekte skalieren oder zeichnen.\\
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=1]{Bilder/Hauptteil/onbodyinterface}
+\centering
+\caption{Anwendung von OmniTouch~\cite[p.~446]{omnitouch}}
+\label{fig:omnitouch}
+\end{figure}
+
+\noindent Ein weiteres Beispiel stellt PalmRC~\cite{palmrc} dar. Bei PalmRC wird die Handfläche eines Menschen zum Eingabegerät für Aktionen mit einem TV-Gerät. Die Handfläche besitzt dabei imaginäre Markierungen, an die diverse Funktionen gekoppelt sind, bspw.~das Umschalten eines Programmes oder das Hoch- und Runterscrollen durch die Senderliste. BIs haben durch die Verbundenheit zum eigenen Körper den Vorteil, leicht bedienbar und einprägsam zu sein. Ein statisches Interface kann somit einfach erlernt und sogar mit geschlossenen Augen bedient werden~\cite{implicationsoflocation}.
+
+\subsection{Hinführung zum Konzept}
+In diesem Kapitel wird näher auf die Aspekte eingegangen, welche sowohl für die Entwicklung der Anwendung als auch für das Interface relevant waren. Zunächst folgen Anforderungen, welche sowohl für das Interface als auch für die Anwendung gestellt wurden. Anschließend werden die Richtlinien aufgelistet, welche bei der Entwicklung des Interfaces berücksichtigt wurden und zusätzlich Grund gaben, bestimmte Designideen zu verwerfen. Danach folgt ein Abschnitt über die Wahl der Position des Interfaces. Dabei wird näher darauf eingegangen, welche Vorteile der menschliche Arm mit sich bringt, und warum sich speziell der Unterarm im Kontext dieser Arbeit als beste Wahl für ein Interface angeboten hat. Im Anschluss daran folgen Konzepte von bereits etablierten Designs, sowie Beschreibungen, weshalb ein Design für eine Anwendung mit Modellierungsansatz und körperbasierter Eingabe in VR geeignet oder nicht geeignet ist. Abschließend wird das finale Konzept für den Prototypen aufgezeigt und beschrieben.
+
+\subsubsection{Anwendungsanforderungen}
+Aus dem Kontext der Arbeit, den aufgeführten ergonomischen Einschränkun\-gen und dem Austausch mit Experten des Fraunhofer IAO in Stuttgart, sind Anforderungen für die zu entwickelnde Anwendung entstanden, welche in Tabelle \ref{tab:anwendungsanforderungen} aufgelistet sind.
+\begin{table}[h]
+\begin{center}
+  \begin{tabular}{| P{1cm} | p{12cm} |}
+    \hline
+     1. & \makecell[l]{Primitive Körper wie Würfel und Kugeln sollen erstellt \\ und gelöscht werden können}\\ \hline
+     2. & Einzelne Objekte sollen selektierbar sein\\ \hline
+     3. & Selektierte Objekte sollen deselektiert werden können\\
+    \hline
+    4. & \makecell[l]{Objekte sollen in Position, Rotation und Größe \\ manipuliert werden können}\\
+    \hline
+    5. & Die Rotation und Translation eines selektierten Objektes soll durch eine einhändige Eingabe möglich sein\\
+    \hline
+    6. & \makecell[l]{Der Benutzer bekommt Informationen zur Benutzung \\ von Funktionen} \\
+    \hline
+    7. & Die Anwendung soll vom Benutzer beendet werden können\\
+    \hline
+  \end{tabular}
+  \caption{Anwendungsanforderungen zufällig sortiert}
+	\label{tab:anwendungsanforderungen}
+\end{center}
+\end{table}
+
+\subsubsection{Richtlinien}
+Bei der Entwicklung von 3DUIs können diverse Richtlinien und Vorgaben beachtet werden, welche für eine positive UX bei der Verwendung des zu entwickelnden Interfaces sorgen. Die Richtlinien und Vorgaben beziehen sich dabei u.a.~auf ergonomische Gegebenheiten, als auch auf technische und andere äußere Faktoren. Ein wichtiger Punkt für die Verwendung von Interfaces durch Gesten und Touch, ist die Komplexität und Natürlichkeit der Interaktionen~\cite{asurveyon3dobjectmanipulation}. Funktionen wie Selektion oder Objektmanipulation sollten einfach und natürlich gestaltet sein. Das Greifen eines Objektes in der Realität kann z.B.~demnach exakt in VR nachgestellt werden, um die Immersion zu erhöhen. Ebenfalls sollten die DOF so weit wie möglich, wenn möglich, reduziert werden, um die Fehlerrate zu verringern und einer Überforderung vorzubeugen. Auch \textit{bi-manual interactions}, also zweihändige Interaktionen, sollten aufgrund der eventuellen Komplexität vermieden werden, da dadurch der Gorilla-Arm Effekt gefördert wird~\cite{asurveyon3dobjectmanipulation}. Funktionen, welche auf dem Arm der nicht dominierenden Hand platziert werden, sollten nach~\cite{constraints3duis} so angebracht werden, sodass andere Funktionen weder geschnitten noch überlagert werden. Auch sollten nach Coquillart et al. schwebende Objekte an andere Objekte befestigt werden, sodass ein natürliches Gefühl für die Elemente entsteht. Für die Selektion und Manipulation von Objekten im virtuellen Raum, sollte außerdem die Überdeckung und Tiefenwahrnehmung berücksichtigt werden. Objekte welche so weit vom Benutzer entfernt sind, sodass ein simples Greifen nicht mehr ausreicht, sollten durch Techniken wie Pointer oder \textit{ray-casting} selektier- und manipulierbar gemacht werden~\cite{anintroductionto3dspacial}. Für die Rotation von Objekten, bedarf es einer Lösung, welche das Handgelenk kaum belastet und die Ergonomie des selbigen berücksichtigt. Ebenso wichtig ist die Entfernung von Funktionen und Interaktionsmöglichkeiten vom Benutzer zum Interface. Weit entfernte Elemente verursachen Zittern und Ungenauigkeit, wodurch die Fehlerrate erhöht und eine negative Erfahrung in der Benutzung mit dem Interface und der Anwendung erlangt wird~\cite{anintroductionto3dspacial}. Desweiteren sollten nach~\cite{virtualrealityandgames} klammernde oder packende Gesten vermieden und eher auf einhändige, simple Gesten gesetzt werden. Jedoch gilt es nicht nur das Interface und die Interaktionen so einfach wie möglich zu halten, sondern auch die Umgebung. Wichtig hierbei ist das Feedback bei der Verwendung von 3DUIs~\cite{theoryandpracticebook}. Das temporäre und dreidimensionale Feedback sollten dabei übereinstimmend sein, sprich die Bewegungen des Benutzers in der virtuellen Umgebung sind auf die natürlichen Bewegungen des Benutzers in der Realität abgestimmt, um ein positives Nutzererlebnis herzustellen und aufrechtzuerhalten. Zusätzlich in Betracht gezogen werden kann die Textur und der Stil des Interfaces. Je echter und hochwertiger das Interface gestaltet ist, desto mehr wird von der Interaktion und der Anwendung erwartet. Ein gezeichneter oder Karikatur ähnlicher Stil ist bei simplen Anwendungen zu bevorzugen, da sowohl das Erlernen als auch das Verstehen des Interfaces dadurch erleichtert wird~\cite{theoryandpracticebook}.
+
+\subsubsection{Interfacepositionierung}
+Die Position eines Interfaces ist mitunter ausschlaggebend, ob eine Anwendung komfortabel und praktisch benutzt werden kann. Aufgrund der be\-reits beschriebenen ergonomischen Gegebenheiten und dem Hintergrund, dass das Interface in einem Modellierungskontext verwendet werden soll, konn\-ten diverse Positionen und Umsetzungen von vornherein ausgeschlossen werden. Die zusätzliche Dimension, welche durch 3D hinzu kommt, bringt zwar Probleme wie Überdeckung oder falsche Tiefeneinschätzung mit sich, wirkt sich jedoch positiv auf die Immersion aus und bietet gerade aufgrund der zusätzlichen Tiefe, neue Möglichkeiten für Interaktionen~\cite{constraints3duis}. Die Arme haben sich als praktisches Mittel in der Arbeit mit VR erwiesen, da durch die horizontale Ausdehnung genügend Platz für diverse Funktionen vorhanden ist~\cite{skinput}. Außerdem sind Arme gut beweglich und benötigen keine unbequemen Bewegungen um anvisiert werden zu können, was während der Benutzung eines HMD aufgrund der eingeschränkten FOV wichtig ist. Auch aufgrund von zweihändigen Funktionen, bietet sich der untere Arm für ein Interface an. Die nicht dominierende Hand kann dabei die Funktionen visualisieren, während die andere Hand die Funktionen selektiert und verwendet. Die Präzision wird durch die körperbasierte Lösung ebenfalls erhöht, da das Ausstrecken und Heben der Arme, um mit einem Interface interagieren zu können, nicht mehr notwendig ist. Zittern und Verzerrung, was zu ungenauen Eingaben führt, sowie die Ermüdung der Arme fällt damit weg~\cite{theoryandpracticebook,anintroductionto3dspacial,consumedindurance}. Auch kann das körperbasierte Interface durch die Nähe zum eigenen Körper, recht große und eindeutige Elemente enthalten, welche die Menünavigation erheblich erleichtern~\cite{constraints3duis}. Desweiteren können durch das Arm-Interface die dazugehörigen Elemente so platziert werden, dass kein Element ein anderes überdeckt. Aktivierte Funktionen blenden nicht benötigte Funktionen aus, oder erweitern ihren Kontext durch Anordnung der Unterlemente in andere Richtungen, sodass die anderen Funktionen sichtbar bleiben~\cite{implicationsoflocation}.
+Aufgrunddessen dass in der Rea\-lität fliegende oder schwebende Objekte an einem anderen Objekt befestigt sind, bieten sich die Arme als Interfaceposition an, da somit eine Immersion der Verbindung zur Hand und zum eigenen Körper aufgebaut wird~\cite{constraints3duis}.
+Durch die Verbindung zum eigenen Körper ist es durchaus möglich, nach einer gewissen Zeit an Übung, das Interface auch blind bedienen zu können~\cite{theoryandpracticebook}.
+
+\subsubsection{Verwandte Ideen und Konzepte}
+Die folgenden Designideen für das Interface unterscheiden sich sowohl in Form als auch in Komplexität, auf welche jeweils eingegangen wird. Für diese Arbeit war es wichtig, ein Interface zu entwickeln, welches durch direkte Eingabemechanismen wie Touch bedient werden kann. Somit konnten Ansätze für Pointer-Techniken in der Designphase ausgeschlossen werden.
+
+\subsubsection*{3D Wheel picker}
+\noindent Die erste Idee war ein nach~\cite{wheelpickerpiemenu} sogenannter \textit{wheelpicker}, zu sehen in Abbildung \ref{fig:wheelpicker1}. Beim \textit{wheelpicker} werden die verfügbaren Interaktionen auf einem Wheel, sprich einem runden Körper platziert. Der \textit{wheelpicker} kann beliebig breit gestaltet werden. Die Funktionen können durch eine simple Rotation des Armes visualisiert oder auch je nach Winkel und gewünschter Funktionalität deaktiviert werden.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept8}
+\centering
+\caption{Wheelpicker-Modell nach~\cite[p.~33]{wheelpickerpiemenu}}
+\label{fig:wheelpicker1}
+\end{figure}
+
+\noindent Nachteil des Wheelpicker-Ansatzes ist jedoch die Bedienung. Das blinde Bedienen des \textit{wheelpicker} wird durch die zusätzlich benötigte Rotation des  Armes erschwert. Der Ansatz des Deaktivierens von Funktionen welche nicht im korrekten Winkel liegen, kann die blinde Bedienung zusätzlich erschweren. Auch kann die Nichtsichtbarkeit von Bedienelementen aufgrund der Rotation des Armes die Bedienung erschweren~\cite{theoryandpracticebook}. Ebenfalls kann es aufgrund der Anbringung der Funktionen zu Überdeckungen während der Bedienung kommen, zu sehen in Abbildung \ref{fig:wheelpicker2}.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept9}
+\centering
+\caption{Interaktion mit Wheelpicker-Modell nach~\cite[p.~33]{wheelpickerpiemenu}}
+\label{fig:wheelpicker2}
+\end{figure}
+
+\subsubsection*{Pie menu}
+\noindent Eine weitere Idee war ein an~\cite{theoryandpracticebook} angelehntes \textit{radial} bzw.~nach~\cite{wheelpickerpiemenu} sogenanntes \textit{pie menu}, visualisiert in Abbildung \ref{fig:piemenu1}. Das \textit{radial} bzw.~\textit{pie menu} ist ein kreisförmiges Interface, bei dem die Elemente in gleichmäßigen Abständen nebeneinander platziert werden. Das \textit{pie menu} ist im Vergleich zum \textit{wheelpicker} ein 2D-Modell und bietet dadurch keine Tiefe.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept10}
+\centering
+\caption{Pie-Modell nach~\cite[p.~10]{wheelpickerpiemenu}}
+\label{fig:piemenu1}
+\end{figure}
+
+\noindent Beim \textit{pie menu} wird auch keine Rotation benötigt, um versteckte Funktionen sichtbar zu machen. Somit wird das Erlernen des Interfaces und die damit verbundene blinde Bedienung gegenüber dem \textit{wheelpicker} erleichtert. Nachteil des \textit{pie menu} ist wiederum die Überdeckung sowie die Anbringung der Elemente auf unterschiedlicher Höhe und Breite, was eine erhöhte Lernkurve zur Folge hat.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept11a}
+\centering
+\caption{Interaktion und Erweiterung des Pie-Modells nach~\citep[p.~10]{wheelpickerpiemenu}}
+\label{fig:piemenu2}
+\end{figure}
+
+\subsubsection*{3D button menu}
+\noindent Auf Grundlage des \textit{pie menu} entstand der dritte Entwurf, zu sehen in Abbildung \ref{fig:ballmodell}. Das \textit{3d button menu} unterscheidet sich nur leicht vom \textit{pie menu}, bietet jedoch eine bessere Sichtbarkeit der Elemente und einheitlich große Elemente. Auch bei diesem Modell entsteht teilweise Überdeckung. Aufgrund der Zweidimensionalität der Elemente fehlt auch hier die Tiefe, was die Bedienung des Interfaces erleichtert~\cite{theoryandpracticebook}. Die Erweiterung gestaltet sich beim Kugel-Modell jedoch als schwierig, da eingeschlossene Elemente existieren, welche bei Erweiterung noch mehr Bedienelemente überdecken und das Interface überladen.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept19a}
+\centering
+\caption{Interaktion und Erweiterung des \textit{3d button menu} nach~\cite[p.~36-37]{wheelpickerpiemenu}}
+\label{fig:ballmodell}
+\end{figure}
+
+\subsubsection*{Kachel-Modell}
+\noindent Das bekannte Kachel-Modell von Microsoft wurde ebenfalls in Betracht gezogen, zu sehen in Abbildung \ref{fig:kachelmodell}. Das Kachel-Modell besteht ausschließlich aus zweidimensionalen Rechtecken, und bietet wie das \textit{pie menu} oder das Kugel-Modell keine Tiefe. Vorteilhaft hierbei ist wiederum die simple Anordnung der Elemente. Die Kacheln werden über-, unter oder nebeneinander angeordnet und besitzen alle die gleichen Maße. Die Erweiterung des Kachel-Modells gestaltet sich in der hier beschriebenen Visualisierung schwierig, da ebenfalls wie beim Kugel-Modell eingeschlossene Elemente existieren, welche bei Erweiterung andere Elemente überdecken könnten.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept17}
+\centering
+\caption{Interaktion mit Kachel-Modell}
+\label{fig:kachelmodell}
+\end{figure}
+
+\noindent Tabelle \ref{tab:interfacedesigns} listet die Vor- und Nachteile der genannten Designs zusammengefasst auf.
+
+\begin{table}[h]
+\begin{center}
+	\begin{tabular}{| l | p{5cm} | p{5cm} |}
+	\hline
+	\multicolumn{1}{|c|}{\textbf{Designtyp}} & \multicolumn{1}{|c|}{\textbf{Vorteile}} & \multicolumn{1}{|c|}{\textbf{Nachteile}} \\ \hline
+	\textit{3d wheel picker} & Deaktivierung nicht relevanter Funktionen durch Rotation & Tiefe und Rotation erschweren blinde Bedienung, Überdeckung durch Tiefe \\ \hline
+	\textit{pie menu} & Keine Tiefe, Keine Rotation & Verdeckung, unterschiedliche Höhen und Breiten der Elemente \\ \hline
+	\textit{3d button menu} & Einheitliche Elemente, Keine Tiefe & Überdeckung, eingeschlossene Elemente, Überladung \\ \hline
+	Kachel-Modell & Keine Tiefe, einheitliche Elemente & Eingeschlossene Elemente, Überdeckung \\ 
+	\hline
+	\end{tabular}
+	\caption{Vor- und Nachteile verwandter Interface-Designs}
+	\label{tab:interfacedesigns}
+\end{center}
+\end{table}
+
+\subsubsection{Interfaceanforderungen}
+Aus den vorangegangenen Richtlinien, Vorzügen der Positionierung und den Vor- und Nachteilen der verwandten Designs, entstanden die in Tabelle \ref{tab:interfaceanforderungen} aufgelisteten Anforderungen für die Gestaltung des prototypischen Interfaces. 
+\begin{table}[h]
+\begin{center}
+  \begin{tabular}{| P{1cm} | p{12cm} |}
+    \hline
+     1. & \makecell[l]{Das Interface soll wenn möglich keine dreidimensionalen \\Körper beinhalten}\\ \hline
+     2. & \makecell[l]{Das Interface soll ohne Scrollen oder zusätzliche \\Rotationsmechanismen auskommen}\\ \hline
+     3. & Die Interface-Elemente sollen wenn möglich zweidimensional und einheitlich gestaltet sein\\
+    \hline
+    4. & \makecell[l]{Es sollen keine Elemente eingeschlossen werden\\ welche schwer zu erweitern sind}\\
+    \hline
+    5. & \makecell[l]{Die Erweiterung einer Funktion soll keine anderen \\Funktionen überdecken}\\
+    \hline
+    6. & \makecell[l]{Funktionen, welche nicht zur Interaktion mit virtuellen Objekten\\ gedacht sind, sollen sich in beliebiger Weise von den \\interaktiven Funktionen unterscheiden} \\
+    \hline
+    7. & \makecell[l]{Die Bedienung des Interfaces soll den eigenen Körper \\miteinbeziehen}\\
+    \hline
+    8. & \makecell[l]{Es sollen auffällige Farben für selektierte Funktionen \\und Objekte verwendet werden}\\
+    \hline
+  \end{tabular}
+  \caption{Interfaceanforderungen zufällig sortiert}
+	\label{tab:interfaceanforderungen}
+\end{center}
+\end{table}
+
+\subsubsection{Finales Interfacekonzept}
+\noindent Der folgende Entwurf repräsentiert das finale Konzept für den zu entwickelnden Prototypen. Auf Grundlage der festgelegten Anforderungen und Richtlinien sowie des vorher beschriebenen Kachel-Modells und dessen Vorteile, entstand die Idee eines Designs, welches für weniger Überdeckung und Überladung sorgen soll. Dem in Abbildung \ref{fig:decisionmenu1} visualisierten Interface wurde der Name \textit{decision menu} gegeben, da es einer Auswahl bekannt von Fragebögen oder Computer-Abfragen ähnelt, bei welchen die Auswahlmöglichkeiten unter- bzw.~nebeneinander platziert werden. Das \textit{decision menu} besteht wie das Kachel-Modell aus zweidimensionalen Bedienelementen, welche jedoch in der ersten Ebene nur nebeneinander angeordnet werden und somit Komplexität reduzieren.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept14}
+\centering
+\caption{Finales Konzept \textit{decision menu}}
+\label{fig:decisionmenu1}
+\end{figure}
+
+\noindent Überdeckung findet aufgrund der horizontalen Ausrichtung der Elemente verringert statt. Die Erweiterung des \textit{decision menu} gestaltet sich leichter als bei den vorherigen Entwürfen, da es keine eingeschlossenen Elemente mehr gibt. Die Erweiterung der Funktionen wird durch Über- bzw.~Unterordnung der neuen Elemente gelöst. Dadurch werden keine anderen Funktionen überdeckt und bleiben auch bei Erweiterung einer Funktion komplett sichtbar. Die Bedienung wird beim \textit{decision menu} nicht nur durch die Kacheloptik, sondern auch durch die simple Positionierung derselbigen erleichtert. Eine blinde Bedienung ist somit einfacher als bei den vorherigen Modellen, da sowohl Überdeckung als auch Überladung geringer sind.
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept23}
+\centering
+\caption{Erweiterung des \textit{decision menu}}
+\label{fig:decisionmenu2}
+\end{figure}
+
+\noindent Funktionen welche keine Auswirkungen auf die virtuell platzierten Objekte haben oder damit nicht in Zusammenhang stehen, werden an der Unterseite des Armes platziert. Dadurch wird die Oberseite entlastet und einer ungewollten Fehlauswahl vorgebeugt. 
+
+\begin{figure}[h]
+\captionsetup{width=.7\linewidth}
+\includegraphics[scale=0.5]{Bilder/Hauptteil/konzept22}
+\centering
+\caption{Platzierung anwendungsspezifischer Funktionen}
+\label{fig:decisionmenu3}
+\end{figure}
+
+\subsection{Implementation}
+Dieses Kapitel beschreibt die Umsetzung des Prototypen und der dazugehörigen Anwendung. Zunächst werden die Tools und Frameworks erläutert, welche für die Implementation der Funktionen und Umgebung zu Hilfe genommen wurden. Anschließend wird die praktische Realisierung in Textform zusammengefasst wiedergegeben. Dabei wird auf Probleme und besondere Ereignisse oder Hindernisse näher eingegangen.
+
+\subsubsection{Verwendete Frameworks und Tools}
+Zur Entwicklung der VR-Anwendung und des dazugehörigen körperbasierten Interfaces, wurden diverse Programme verwendet, die sowohl VR-Unterstützung als auch nützliche Extras bieten. Unity vom Unternehmen \textit{Unity Technologies}, diente als Spiel-Engine und Entwicklungsumgebung. Verwendet wurde dabei die Version 2018.3.11f1. Zum Schreiben des benötigten Codes wurde Microsoft's Visual Studio 2017 verwendet. Unity Codeerkennung als optionale Erweiterung wurde in Visual Studio integriert. Zur Benutzung des Vive Headsets sowie der Vive Controller und Vive Kameras, wurde das Tool SteamVR~\citep{steamvr} in Unity importiert. SteamVR ist ausgestattet mit zahlreichen vordefinierten Funktionen und Möglichkeiten, mit VR-Hardware interagieren und VR-Anwendungen entwickeln zu können. Um das Gefühl für den eigenen Körper in VR zu erhöhen und damit die Qualität der Immersion zu verbessern, wurde die Unity-Erweiterung FinalIK~\citep{finalik} verwendet. FinalIK erfasst durch inverse Kinematik und die vorhandenen Vive Kameras die Beschaffenheit des Körpers des Trägers und kann dadurch eine vollständige virtuelle Kopie des Trägers und seiner Bewegungen im virtuellen Raum simulieren. Dadurch ist ein qualitativ hochwertiges Mapping des Interfaces auf den Körper des Benutzers möglich.
+
+\subsubsection{Umsetzung}
+Die Umsetzung setzt sich zusammen aus Elementen, welche die Anwendung und dessen Gestaltung betreffen, als auch aus Elementen speziell für das Interface und die damit verbundene Interaktion. Zunächst wird die virtuelle Umgebung beschrieben, in welcher das Interface benutzt werden kann. Anschließend folgen Erläuterungen zur Implementation des Interfaces und der damit verbundenen Interaktion als auch Beschreibungen der Interfacefunktionen und der Benutzung der selbigen.\\
+
+\noindent \textbf{Anwendung}\\
+Die Anwendung ist schlicht und praktikabel gestaltet, da der Fokus dieser Arbeit auf dem Interface und der Verwendung dessen liegt. Die Umgebung besteht aus einem viereckigen Raum ohne Decke, sodass sich der Benutzer der Anwendung nicht eingeengt fühlt und Platz nach oben für Manipulationen hat. Der Boden des Raumes wurde mit einer Teleportations-Komponente versehen, welche durch SteamVR als Vorlage mitgeliefert wurde. Dadurch kann sich ein Benutzer bei Verwendung der entsprechenden Funktion, im Raum an beliebige Positionen teleportieren, um mit Objekten zu interagieren oder die Umgebung aus einem anderen Blickwinkel betrachten zu können. Jede Wand wurde mit einem Collider, also einer Kollidierungs-Komponente versehen. Somit kann der Benutzer nicht ungewollt aus dem Raum fallen. Der Boden und die Wände besitzen schlichte, unauffällige Texturen, sodass sich der Raum nicht ungewöhnlich oder fremd anfühlt. Auch alle erstellbaren Objekte besitzen Texturen. Die Texturen der primitiven Körper bestehen jedoch ausschließlich aus einfachen Farben wie rot, grün oder blau. Die Texturen der Objekte wurden bewusst in den RGB-Farben gehalten, um die Objekte unterscheiden zu können und die Objekte für jeden subjektiven Kontext passend zu machen. Das Modell des Benutzers ist eine von FinalIK mitgelieferte Vorlage, welche an einen Crashtest-Dummy angelehnt ist. Das Modell nimmt dadurch keine geschlechterspezifische Rolle an, was für eine positive Benutzererfahrung bei allen Geschlechtern sorgen soll. Das Modell wurde mit einer hautähnlichen Farbe versehen, um ein natürlicheres Gefühl bei der Verwendung und Interaktion mit dem Modell herzustellen.\\
+
+\noindent \textbf{Interface}\\
+Das Interface wurde am linken Arm des Dummy-Modells angebracht. Durch das FinalIK-Plugin können dem Dummy-Modell sogenannte \textit{Bones} zugeordnet werden. Somit kann der Körper eines Benutzers exakt an das Modell angepasst werden, um für eine größere Immersion und genauere Eingaben sowie Bewegungen zu sorgen. Der linke Arm teilt sich somit in mehrere \textit{Bones} auf, welche bei der Positionierung und Fixierung des Interfaces hilfreich waren. Das Interface selbst besteht aus einem \textit{Canvas}, welches im \textit{WorldSpace} platziert wurde. Durch die \textit{WorldSpace} Einstellung, wurde die Anbringung am linken Arm des Benutzers erst möglich, da ein im \textit{ScreenSpace} platziertes Interface direkt vor einer Kamera platziert wird und im dreidimensionalen Raum nicht frei beweglich ist, was für diese Arbeit jedoch wichtig war. Die Rotation und Translation des Interfaces wird hauptsächlich durch das Modell und die zugeordneten \textit{Bones} geregelt. Da die Standardeinstellungen für den Kontext dieser Arbeit nicht ausreichten, wurden Anpassungen und Optimierungen durch zusätzliche selbstgeschriebene Skripte vorgenommen. Auf der ersten Ebene, welche sich auf der oberen Seite des linken Unterarms befindet, wurden die objektspezifischen Funktionen angebracht. Darunter die Funktionen zur Manipulation und Erstellung von Objekten, in der Anwendung \textit{Manipulate} und \textit{Create} genannt. Die englische Sprache wurde für alle Interaktionen, Hinweise und Bezeichnungen verwendet, um die Anwendung international einsetzbar zu machen. Die objektspezifischen Funktionen der ersten Ebene wurden nebeneinander angebracht und erstrecken sich somit auf der horizontalen Achse des Armes des Dummy-Modells. Die zweite Ebene der objektspezifischen Funktionen, erstreckt sich auf der vertikalen Achse des Armes. Das bedeutet, dass erweiterte Funktionen über- oder unter den Funktionen der ersten Ebene angebracht sind, ohne die erste Ebene zu verdecken. Zur Erweiterung der Manipulationsfunktion gehören die Standard-Manipulationen \textit{Translate}, \textit{Rotate} und \textit{Scale}, auf welche später in diesem Kapitel eingegangen wird. Die Erweiterung der \textit{Create}-Funktion umfasst die drei primitiven Körper Würfel, Kugel und Zylinder. Anwendungsspezifische Funktionen bzw.~Funktionen ohne weitere Kategorisierung, wurden auf der unteren Seite des linken Unterarms des Dummy-Modells angebracht. Dadurch soll der Fokus der Interaktion auf die Objekte verstärkt werden und die Komplexität und Bedienung des Interfaces verringert und erleichtert werden. Zu den nicht kategorisierten bzw.~anwendungsspezifischen Funktionen gehört das Löschen von Objekten, in der Anwendung \textit{Delete} genannt, und das Beenden der Anwendung, in der Anwendung mit \textit{Quit} tituliert. Zusätzliche oder neue Funktionen können beliebig auf den Achsen auf der Ober- oder Unterseite des Armes platziert werden, wenn die Ebenen und deren Bedeutung berücksichtigt wird. Die erste Ebene symbolisiert Obermenüs, wohingegen die zweite Ebene Untermenüs bzw.~Funktionen ohne weitere Unterkategorien darstellt.\\
+
+\noindent \textbf{Interfaceinteraktion}\\
+SO interagiert das Interface\\
+
+\noindent \textbf{Funktionen}\\
+Hier kommen die Funktionen\\
+
+
+\subsubsection{Probleme und Hindernisse}
+Nur Probleme
+
+\subsection{Evaluation}
+Ausem Netz ziehen und mindestens 16 Leute testen lassen
+
+\subsubsection{Aufbau}
+wie sieht die evaluation aus, was habe ich mir vorgestellt zu untersuchen
+
+\subsubsection{Umsetzung}
+wo, wie, wann, mit wem und womit wurde die evaluation durchgeführt
+
+\subsubsection{Ergebnis}
+was ist raus gekommen, war das interface geil?

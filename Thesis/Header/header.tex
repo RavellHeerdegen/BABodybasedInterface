@@ -1,0 +1,33 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[square]{natbib}
+% Um Captions für Bilder etc zu haben und Bilder reinladen zu können
+\usepackage{graphicx,caption}
+\usepackage{verbatim}
+
+% Damit man umschlungene Bilder machen kann
+\usepackage{wrapfig}
+% Ändert Abstände und Ausrichtungen von Tabellen und Zellen
+\usepackage{setspace, array}
+\usepackage{makecell}
+
+% Keine Schusterjungen und Hurenkinder Package
+\usepackage[all]{nowidow}
+
+% Keine "Schusterjungen"
+\clubpenalty=10000
+
+% Keine "Hurenkinder"
+\widowpenalty=10000
+
+\bibliographystyle{plainnat}
+
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\figurename}{Abbildung}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+\renewcommand{\refname}{Referenzen}
+\renewcommand{\arraystretch}{1.5}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand\tablename{Tabelle}
+\renewcommand\cite{\citep}
