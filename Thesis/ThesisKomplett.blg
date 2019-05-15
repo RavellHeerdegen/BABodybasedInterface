@@ -12,45 +12,46 @@ Warning--I'm ignoring asurveyon3dobjectmanipulation's extra "journal" field
 --line 171 of file referenzen.bib
 Warning--empty journal in anintroductionto3dspacial
 Warning--empty journal in hmdsinpsychology
-You've used 32 entries,
+Warning--empty journal in colors
+You've used 35 entries,
             2773 wiz_defined-function locations,
-            804 strings with 12085 characters,
-and the built_in function-call counts, 18585 in all, are:
-= -- 1787
-> -- 1010
-< -- 34
-+ -- 341
-- -- 308
-* -- 1409
-:= -- 2709
-add.period$ -- 131
-call.type$ -- 32
-change.case$ -- 195
-chr.to.int$ -- 31
-cite$ -- 66
-duplicate$ -- 889
-empty$ -- 1441
-format.name$ -- 352
-if$ -- 4104
+            822 strings with 12518 characters,
+and the built_in function-call counts, 20024 in all, are:
+= -- 1912
+> -- 1089
+< -- 36
++ -- 368
+- -- 332
+* -- 1513
+:= -- 2923
+add.period$ -- 141
+call.type$ -- 35
+change.case$ -- 210
+chr.to.int$ -- 34
+cite$ -- 73
+duplicate$ -- 966
+empty$ -- 1558
+format.name$ -- 379
+if$ -- 4417
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 34
-newline$ -- 189
-num.names$ -- 130
-pop$ -- 406
+missing$ -- 39
+newline$ -- 205
+num.names$ -- 142
+pop$ -- 447
 preamble$ -- 1
-purify$ -- 166
+purify$ -- 180
 quote$ -- 0
-skip$ -- 753
+skip$ -- 816
 stack$ -- 0
-substring$ -- 816
-swap$ -- 230
-text.length$ -- 22
+substring$ -- 865
+swap$ -- 247
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 332
-warning$ -- 2
-while$ -- 164
+type$ -- 355
+warning$ -- 3
+while$ -- 175
 width$ -- 0
-write$ -- 498
-(There were 3 warnings)
+write$ -- 537
+(There were 4 warnings)

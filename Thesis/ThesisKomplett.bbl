@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -86,6 +86,12 @@ Luis~N. Jofre, Graciela~B. Rodriguez, Yoselie~M. Alvarado, Jacqueline~M.
 \newblock Non-verbal communication interface using a data glove.
 \newblock \emph{CACIDI 2016 - Congreso Aergentino de Ciencias de la Informatica
   y Desarrollos de Investigacion}, 2016.
+
+\bibitem[Jordan et~al.(2014)Jordan, Thomas, McClelland, and Weerdmeester]{sus}
+P.W. Jordan, B.~Thomas, I.L. McClelland, and B.~Weerdmeester.
+\newblock \emph{Usability Evaluation In Industry}.
+\newblock CRC Press, 2014.
+\newblock ISBN 9781498710411.
 
 \bibitem[Jr et~al.(2010)Jr, Marks, and
   Marksplaystationsonycom]{anintroductionto3dspacial}
@@ -205,6 +211,11 @@ Bernhard~E. Riecke, Joseph~J. LaViola, Jr., and Ernst Kruijff.
   New York, NY, USA, 2018{\natexlab{b}}. ACM.
 \newblock ISBN 978-1-4503-5809-5.
 
+\bibitem[Rogers et~al.(2011")Rogers, Sharp, and Preece]{decidebook}
+Yvonne Rogers, Helen Sharp, and Jenny Preece.
+\newblock \emph{Interaction design: beyond human-computer interaction ;3rd ed.}
+\newblock J Wiley \& Sons, Chichester West Sussex UK, 2011".
+
 \bibitem[RootMotion(2014)]{finalik}
 RootMotion.
 \newblock {FinalIK Plugin}, 2014.
@@ -230,6 +241,12 @@ Denis Vajak.
 \newblock {SteamVR Plugin}, 2014.
 \newblock URL \url{https://steamcommunity.com/steamvr}.
 \newblock aufgerufen am 01.05.2019.
+
+\bibitem[Vos(1978)]{colors}
+Judd Vos.
+\newblock Colorimetric and photometric properties of a 2 degree fundamental
+  observer.
+\newblock pages 125–--128, 1978.
 
 \bibitem[{Weiß} et~al.(2018){Weiß}, {Hepperle}, {Sieß}, and
   {Woelfel}]{whatuserinterfacetouse}

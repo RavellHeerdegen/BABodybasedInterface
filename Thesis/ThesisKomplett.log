@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.8)  1 MAY 2019 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.8)  15 MAY 2019 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,9 +258,9 @@ t-ton menu \OT1/cmr/m/n/12 nach [Ehrlich,
 \openout2 = `Kapitel/einleitung.aux'.
 
  (./Kapitel/einleitung.tex)
-Overfull \hbox (5.86674pt too wide) in paragraph at lines 7--16
-\OT1/cmr/m/n/12 nen-zuler-nen, an-der-er-seits um den Fortschritt in der En-twi
-ck-lung und Erf^^?ullung
+Overfull \hbox (15.93747pt too wide) in paragraph at lines 7--16
+\OT1/cmr/m/n/12 Prim^^?arziel dieser Ar-beit ist ein k^^?orperbasiertes In-ter-
+face f^^?ur eine VR-Anwendung
  []
 
 [4
@@ -290,9 +290,9 @@ Package pdftex.def Info: Bilder/Hauptteil/virtualreality.png  used on input lin
 e 12.
 (pdftex.def)             Requested size: 217.11058pt x 162.6071pt.
 
-Overfull \hbox (4.44824pt too wide) in paragraph at lines 19--20
-\OT1/cmr/m/n/12 Beleuch-tung [Lak-sh-mi-narayanan and Mo-roi, 2017]. Die meis-t
-en ak-tuell bekan-
+Overfull \hbox (6.8959pt too wide) in paragraph at lines 19--20
+\OT1/cmr/m/n/12 Raum berech-nen zu k^^?onnen, kom-men Beschle-u-ni-gungssen-sor
+en und Gy-roskope
  []
 
 
@@ -313,57 +313,54 @@ Overfull \hbox (16.62914pt too wide) in paragraph at lines 29--30
 af-fek-tive F^^?ahigkeiten
  []
 
-
-Overfull \hbox (17.08144pt too wide) in paragraph at lines 32--34
+[7 <./Bilder/Hauptteil/viveheadset.jpeg>]
+Overfull \hbox (17.08144pt too wide) in paragraph at lines 32--35
 \OT1/cmr/m/n/12 stel-lung k^^?onnen un-ter-schiedliche Eingabeger^^?ate zum Ein
 -satz kom-men. Nach [Or-
  []
 
-[7 <./Bilder/Hauptteil/viveheadset.jpeg>]
 <Bilder/Hauptteil/vivecontroller.jpeg, id=35, 322.20375pt x 262.581pt>
 File: Bilder/Hauptteil/vivecontroller.jpeg Graphic file (type jpg)
 <use Bilder/Hauptteil/vivecontroller.jpeg>
 Package pdftex.def Info: Bilder/Hauptteil/vivecontroller.jpeg  used on input li
-ne 37.
+ne 38.
 (pdftex.def)             Requested size: 241.6522pt x 196.93524pt.
-
+[8]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9 <./Bilder/Hauptteil/vivecontroller.jpeg>] [10]
+[9 <./Bilder/Hauptteil/vivecontroller.jpeg>] [10]
 <Bilder/Hauptteil/3duserinterface.png, id=45, 295.70474pt x 237.2865pt>
 File: Bilder/Hauptteil/3duserinterface.png Graphic file (type png)
 <use Bilder/Hauptteil/3duserinterface.png>
 Package pdftex.def Info: Bilder/Hauptteil/3duserinterface.png  used on input li
-ne 70.
+ne 71.
 (pdftex.def)             Requested size: 221.778pt x 177.96442pt.
  [11 <./Bilder/Hauptteil/3duserinterface.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Bilder/Hauptteil/onbodyinterface.png, id=49, 185.493pt x 134.30174pt>
+[12]
+<Bilder/Hauptteil/onbodyinterface.png, id=53, 185.493pt x 134.30174pt>
 File: Bilder/Hauptteil/onbodyinterface.png Graphic file (type png)
 <use Bilder/Hauptteil/onbodyinterface.png>
 Package pdftex.def Info: Bilder/Hauptteil/onbodyinterface.png  used on input li
-ne 83.
+ne 84.
 (pdftex.def)             Requested size: 185.49254pt x 134.3014pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
-Overfull \hbox (5.08578pt too wide) in paragraph at lines 98--113
+ [13 <./Bilder/Hauptteil/onbodyinterface.png>]
+Overfull \hbox (5.08578pt too wide) in paragraph at lines 99--114
  [] 
  []
 
-[13 <./Bilder/Hauptteil/onbodyinterface.png>] [14]
-Overfull \hbox (5.83617pt too wide) in paragraph at lines 122--125
+[14]
+Overfull \hbox (5.83617pt too wide) in paragraph at lines 123--126
 \OT1/cmr/m/n/12 doch pos-i-tiv auf die Im-mer-sion aus und bi-etet ger-ade auf-
 grund der zus^^?atzlichen
  []
 
 
-Overfull \hbox (4.1959pt too wide) in paragraph at lines 122--125
+Overfull \hbox (4.1959pt too wide) in paragraph at lines 123--126
 \OT1/cmr/m/n/12 Tiefe, neue M^^?oglichkeiten f^^?ur In-ter-ak-tio-nen [Stuer-zl
 inger and Wingrave, 2011].
  []
@@ -372,51 +369,62 @@ inger and Wingrave, 2011].
 <Bilder/Hauptteil/konzept8.png, id=66, 269.20575pt x 252.945pt>
 File: Bilder/Hauptteil/konzept8.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept8.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept8.png  used on input line 134.
+Package pdftex.def Info: Bilder/Hauptteil/konzept8.png  used on input line 135.
 
 (pdftex.def)             Requested size: 134.60254pt x 126.47218pt.
 
-Underfull \hbox (badness 1436) in paragraph at lines 136--136
+Underfull \hbox (badness 1436) in paragraph at lines 137--137
 []\OT1/cmr/m/n/12 Abbildung 6: |Wheelpicker-Modell nach [Ehrlich,
  []
 
 <Bilder/Hauptteil/konzept9.png, id=68, 272.81924pt x 252.945pt>
 File: Bilder/Hauptteil/konzept9.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept9.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept9.png  used on input line 144.
+Package pdftex.def Info: Bilder/Hauptteil/konzept9.png  used on input line 145.
 
 (pdftex.def)             Requested size: 136.40929pt x 126.47218pt.
 
-Overfull \hbox (49.04324pt too wide) in paragraph at lines 151--152
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (49.04324pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/12 Eine weit-ere Idee war ein an [LaVi-ola et al., 2017] an-gelehn
 tes \OT1/cmr/m/it/12 ra-dial \OT1/cmr/m/n/12 bzw. nach [Ehrlich,
  []
 
-[17 <./Bilder/Hauptteil/konzept8.png> <./Bilder/Hauptteil/konzept9.png>]
-<Bilder/Hauptteil/konzept10.png, id=74, 272.217pt x 253.54726pt>
+<Bilder/Hauptteil/konzept10.png, id=69, 272.217pt x 253.54726pt>
 File: Bilder/Hauptteil/konzept10.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept10.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept10.png  used on input line 155
+Package pdftex.def Info: Bilder/Hauptteil/konzept10.png  used on input line 156
 .
 (pdftex.def)             Requested size: 136.10815pt x 126.7733pt.
-<Bilder/Hauptteil/konzept11a.png, id=75, 339.06676pt x 349.90726pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/Hauptteil/konzept11a.png, id=70, 339.06676pt x 349.90726pt>
 File: Bilder/Hauptteil/konzept11a.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept11a.png>
 Package pdftex.def Info: Bilder/Hauptteil/konzept11a.png  used on input line 16
-5.
+6.
 (pdftex.def)             Requested size: 169.53296pt x 174.95319pt.
+[17 <./Bilder/Hauptteil/konzept8.png>]
 
-[18 <./Bilder/Hauptteil/konzept10.png> <./Bilder/Hauptteil/konzept11a.png>]
-<Bilder/Hauptteil/konzept19a.png, id=82, 308.352pt x 339.669pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/Hauptteil/konzept19a.png, id=75, 308.352pt x 339.669pt>
 File: Bilder/Hauptteil/konzept19a.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept19a.png>
 Package pdftex.def Info: Bilder/Hauptteil/konzept19a.png  used on input line 17
-6.
+7.
 (pdftex.def)             Requested size: 154.17561pt x 169.83408pt.
-<Bilder/Hauptteil/konzept17.png, id=83, 384.2355pt x 295.1025pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./Bilder/Hauptteil/konzept9.png> <./Bilder/Hauptteil/konzept10.png>]
+<Bilder/Hauptteil/konzept17.png, id=82, 384.2355pt x 295.1025pt>
 File: Bilder/Hauptteil/konzept17.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept17.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept17.png  used on input line 187
+Package pdftex.def Info: Bilder/Hauptteil/konzept17.png  used on input line 188
 .
 (pdftex.def)             Requested size: 192.11728pt x 147.55087pt.
 
@@ -424,52 +432,52 @@ Package pdftex.def Info: Bilder/Hauptteil/konzept17.png  used on input line 187
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 200--200
+Underfull \hbox (badness 5050) in paragraph at lines 201--201
 []|\OT1/cmr/m/n/12 Deaktivierung nicht rel-e-
  []
 
 
-Underfull \hbox (badness 6141) in paragraph at lines 200--200
+Underfull \hbox (badness 6141) in paragraph at lines 201--201
 \OT1/cmr/m/n/12 van-ter Funk-tio-nen durch
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 \OT1/cmr/m/n/12 eren blinde Be-di-enung,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []|\OT1/cmr/m/n/12 Verdeckung, un-ter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \OT1/cmr/m/n/12 schiedliche H^^?ohen und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 []|\OT1/cmr/m/n/12 Einheitliche El-e-mente,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 []|[]\OT1/cmr/m/n/12 Uberdeckung,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 \OT1/cmr/m/n/12 eingeschlossene El-e-mente,
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 203--204
+Underfull \hbox (badness 5119) in paragraph at lines 204--205
 []|\OT1/cmr/m/n/12 Eingeschlossene El-e-mente,
  []
 
 
-Overfull \hbox (13.42549pt too wide) in paragraph at lines 197--206
+Overfull \hbox (13.42549pt too wide) in paragraph at lines 198--207
  [] 
  []
 
@@ -477,95 +485,204 @@ Overfull \hbox (13.42549pt too wide) in paragraph at lines 197--206
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.08578pt too wide) in paragraph at lines 215--232
+Overfull \hbox (5.08578pt too wide) in paragraph at lines 216--233
  [] 
  []
 
-[19 <./Bilder/Hauptteil/konzept19a.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (8.4042pt too wide) in paragraph at lines 238--239
+Overfull \hbox (8.4042pt too wide) in paragraph at lines 239--240
 \OT1/cmr/m/n/12 Richtlin-ien sowie des vorher beschriebe-nen Kachel-Modells und
  dessen Vorteile,
  []
 
 
-Overfull \hbox (22.30823pt too wide) in paragraph at lines 238--239
+Overfull \hbox (22.30823pt too wide) in paragraph at lines 239--240
 \OT1/cmr/m/n/12 ent-stand die Idee eines De-signs, welches f^^?ur weniger []Ube
 rdeckung und []Uberladung
  []
 
-<Bilder/Hauptteil/konzept14.png, id=88, 295.1025pt x 288.47775pt>
+[19 <./Bilder/Hauptteil/konzept11a.png>]
+<Bilder/Hauptteil/konzept14.png, id=87, 295.1025pt x 288.47775pt>
 File: Bilder/Hauptteil/konzept14.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept14.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept14.png  used on input line 242
+Package pdftex.def Info: Bilder/Hauptteil/konzept14.png  used on input line 243
 .
 (pdftex.def)             Requested size: 147.55087pt x 144.23851pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/Hauptteil/konzept23.png, id=89, 402.90524pt x 314.3745pt>
+[20 <./Bilder/Hauptteil/konzept19a.png> <./Bilder/Hauptteil/konzept17.png>]
+<Bilder/Hauptteil/konzept23.png, id=93, 402.90524pt x 314.3745pt>
 File: Bilder/Hauptteil/konzept23.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept23.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept23.png  used on input line 252
+Package pdftex.def Info: Bilder/Hauptteil/konzept23.png  used on input line 253
 .
 (pdftex.def)             Requested size: 201.45212pt x 157.18686pt.
-[20 <./Bilder/Hauptteil/konzept17.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <Bilder/Hauptteil/konzept22.png, id=94, 243.309pt x 237.2865pt>
 File: Bilder/Hauptteil/konzept22.png Graphic file (type png)
 <use Bilder/Hauptteil/konzept22.png>
-Package pdftex.def Info: Bilder/Hauptteil/konzept22.png  used on input line 262
+Package pdftex.def Info: Bilder/Hauptteil/konzept22.png  used on input line 263
 .
 (pdftex.def)             Requested size: 121.6542pt x 118.64294pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (11.1153pt too wide) in paragraph at lines 269--270
+Overfull \hbox (11.1153pt too wide) in paragraph at lines 270--271
 \OT1/cmr/m/n/12 Dieses Kapi-tel beschreibt die Um-set-zung des Pro-to-typen und
  der dazugeh^^?origen
  []
 
 
-Overfull \hbox (13.52638pt too wide) in paragraph at lines 272--273
+Overfull \hbox (13.52638pt too wide) in paragraph at lines 273--274
 \OT1/cmr/m/n/12 In-ter-faces, wur-den di-verse Pro-gramme ver-wen-det, die sowo
 hl VR-Unterst^^?utzung
  []
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 277--279
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
 [23 <./Bilder/Hauptteil/konzept14.png> <./Bilder/Hauptteil/konzept23.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 280--282
+Overfull \hbox (3.95908pt too wide) in paragraph at lines 281--283
+\OT1/cmr/m/n/12 das FinalIK-Plugin k^^?onnen dem Dummy-Modell so-ge-nan-nte \OT
+1/cmr/m/it/12 Bones \OT1/cmr/m/n/12 und Kalib-
+ []
+
+[24 <./Bilder/Hauptteil/konzept22.png>] [25]
+<Bilder/Hauptteil/Bearbeitet/Interface.png, id=114, 432.4155pt x 185.493pt>
+File: Bilder/Hauptteil/Bearbeitet/Interface.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/Interface.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/Interface.png  used on inp
+ut line 286.
+(pdftex.def)             Requested size: 259.4513pt x 111.29665pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--298
 
  []
 
-[24 <./Bilder/Hauptteil/konzept22.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+
+Overfull \hbox (13.7pt too wide) in paragraph at lines 294--298
+\OT1/cmr/m/n/12 Die Tele-por-ta-tion des Be-nutzers wird durch eine Touchpad-Fu
+nktion erm^^?oglicht.
+ []
+
+<Bilder/Hauptteil/Bearbeitet/Teleport.png, id=115, 427.5975pt x 297.5115pt>
+File: Bilder/Hauptteil/Bearbeitet/Teleport.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/Teleport.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/Teleport.png  used on inpu
+t line 301.
+(pdftex.def)             Requested size: 213.79822pt x 148.75539pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <./Bilder/Hauptteil/Bearbeitet/Interface.png>]
+<Bilder/Hauptteil/Bearbeitet/SelektionMerge.png, id=120, 511.9125pt x 241.50224
+pt>
+File: Bilder/Hauptteil/Bearbeitet/SelektionMerge.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/SelektionMerge.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/SelektionMerge.png  used o
+n input line 312.
+(pdftex.def)             Requested size: 255.95563pt x 120.75081pt.
+
+Underfull \hbox (badness 1789) in paragraph at lines 314--314
+[]\OT1/cmr/m/n/12 Abbildung 17: |Markieren und Se-lek-tieren eines
+ []
+
+<Bilder/Hauptteil/Bearbeitet/TranslationMerge.png, id=121, 434.22224pt x 259.56
+975pt>
+File: Bilder/Hauptteil/Bearbeitet/TranslationMerge.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/TranslationMerge.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/TranslationMerge.png  used
+ on input line 322.
+(pdftex.def)             Requested size: 260.53535pt x 155.74304pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/Hauptteil/Bearbeitet/RotationMerge.png, id=122, 775.698pt x 240.9pt>
+File: Bilder/Hauptteil/Bearbeitet/RotationMerge.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/RotationMerge.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/RotationMerge.png  used on
+ input line 332.
+(pdftex.def)             Requested size: 271.49835pt x 84.31625pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 <./Bilder/Hauptteil/Bearbeitet/Teleport.png> <./Bilder/Hauptteil/Bearbeitet
+/SelektionMerge.png>]
+<Bilder/Hauptteil/Bearbeitet/SkalierungMerge.png, id=128, 463.13025pt x 261.376
+5pt>
+File: Bilder/Hauptteil/Bearbeitet/SkalierungMerge.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/SkalierungMerge.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/SkalierungMerge.png  used 
+on input line 342.
+(pdftex.def)             Requested size: 277.8803pt x 156.82709pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--353
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 348--353
 
  []
 
-[25]) [26]
+<Bilder/Hauptteil/Bearbeitet/Blind.png, id=129, 329.43076pt x 321.6015pt>
+File: Bilder/Hauptteil/Bearbeitet/Blind.png Graphic file (type png)
+<use Bilder/Hauptteil/Bearbeitet/Blind.png>
+Package pdftex.def Info: Bilder/Hauptteil/Bearbeitet/Blind.png  used on input l
+ine 356.
+(pdftex.def)             Requested size: 164.71497pt x 160.80035pt.
+[28 <./Bilder/Hauptteil/Bearbeitet/TranslationMerge.png> <./Bilder/Hauptteil/Be
+arbeitet/RotationMerge.png>] [29 <./Bilder/Hauptteil/Bearbeitet/SkalierungMerge
+.png> <./Bilder/Hauptteil/Bearbeitet/Blind.png>]
+Overfull \hbox (15.28474pt too wide) in paragraph at lines 369--370
+\OT1/cmr/m/n/12 F^^?ur die Eval-u-a-tion des Sys-tems wird nach dem DECIDE-Fram
+ework von [Rogers
+ []
+
+
+Overfull \hbox (5.08578pt too wide) in paragraph at lines 373--393
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+<Bilder/Hauptteil/BildRaum.png, id=143, 591.71063pt x 400.49625pt>
+File: Bilder/Hauptteil/BildRaum.png Graphic file (type png)
+<use Bilder/Hauptteil/BildRaum.png>
+Package pdftex.def Info: Bilder/Hauptteil/BildRaum.png  used on input line 402.
+
+(pdftex.def)             Requested size: 295.85458pt x 200.24763pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31] [32 <./Bilder/Hauptteil/BildRaum.png>]) [33]
 \openout2 = `Kapitel/schluss.aux'.
 
- (./Kapitel/schluss.tex) [27
+ (./Kapitel/schluss.tex)
+[34
 
 
 ] (./ThesisKomplett.bbl
@@ -574,46 +691,46 @@ Underfull \hbox (badness 2197) in paragraph at lines 20--27
 , Flo-rian
  []
 
-[28
+[35
 
-] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 209--213
+] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 220--224
 []\OT1/cmr/m/n/12 RootMotion.  Fi-nalIK Plu-gin, 2014.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--213
+Underfull \hbox (badness 10000) in paragraph at lines 220--224
 \OT1/cmtt/m/n/12 http://www.root-motion.com/final-ik.html\OT1/cmr/m/n/12 .  auf
 gerufen am
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 240--244
 []\OT1/cmr/m/n/12 Valve Cor-po-ra-tion.  SteamVR Plu-gin, 2014.  URL
  []
 
-) [31] (./ThesisKomplett.aux (./Kapitel/deckblatt.aux) (./Kapitel/abstract.aux)
+) [38] (./ThesisKomplett.aux (./Kapitel/deckblatt.aux) (./Kapitel/abstract.aux)
 (./Kapitel/einleitung.aux) (./Kapitel/hauptteil.aux) (./Kapitel/schluss.aux))
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3488 strings out of 492639
- 55098 string characters out of 6133088
- 127924 words of memory out of 5000000
- 7282 multiletter control sequences out of 15000+600000
+ 3547 strings out of 492639
+ 56997 string characters out of 6133088
+ 129172 words of memory out of 5000000
+ 7332 multiletter control sequences out of 15000+600000
  8410 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,18n,44p,3455b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,44p,4022b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ThesisKomplett.pdf (32 pages, 2050562 bytes).
+Output written on ThesisKomplett.pdf (39 pages, 4450818 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 188 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

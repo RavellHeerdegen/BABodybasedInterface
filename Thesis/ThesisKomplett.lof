@@ -4,11 +4,19 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces 3D Dateimanager\nobreakspace {}\citep [p.\nobreakspace {}243]{issuesandbenefitsofusing3d}\relax }}{11}
 \contentsline {figure}{\numberline {5}{\ignorespaces Anwendung von OmniTouch\nobreakspace {}\citep [p.\nobreakspace {}446]{omnitouch}\relax }}{13}
 \contentsline {figure}{\numberline {6}{\ignorespaces Wheelpicker-Modell nach\nobreakspace {}\citep [p.\nobreakspace {}33]{wheelpickerpiemenu}\relax }}{17}
-\contentsline {figure}{\numberline {7}{\ignorespaces Interaktion mit Wheelpicker-Modell nach\nobreakspace {}\citep [p.\nobreakspace {}33]{wheelpickerpiemenu}\relax }}{17}
+\contentsline {figure}{\numberline {7}{\ignorespaces Interaktion mit Wheelpicker-Modell nach\nobreakspace {}\citep [p.\nobreakspace {}33]{wheelpickerpiemenu}\relax }}{18}
 \contentsline {figure}{\numberline {8}{\ignorespaces Pie-Modell nach\nobreakspace {}\citep [p.\nobreakspace {}10]{wheelpickerpiemenu}\relax }}{18}
-\contentsline {figure}{\numberline {9}{\ignorespaces Interaktion und Erweiterung des Pie-Modells nach\nobreakspace {}\citep [p.\nobreakspace {}10]{wheelpickerpiemenu}\relax }}{18}
-\contentsline {figure}{\numberline {10}{\ignorespaces Interaktion und Erweiterung des \textit {3d button menu} nach\nobreakspace {}\citep [p.\nobreakspace {}36-37]{wheelpickerpiemenu}\relax }}{19}
+\contentsline {figure}{\numberline {9}{\ignorespaces Interaktion und Erweiterung des Pie-Modells nach\nobreakspace {}\citep [p.\nobreakspace {}10]{wheelpickerpiemenu}\relax }}{19}
+\contentsline {figure}{\numberline {10}{\ignorespaces Interaktion und Erweiterung des \textit {3d button menu} nach\nobreakspace {}\citep [p.\nobreakspace {}36-37]{wheelpickerpiemenu}\relax }}{20}
 \contentsline {figure}{\numberline {11}{\ignorespaces Interaktion mit Kachel-Modell\relax }}{20}
 \contentsline {figure}{\numberline {12}{\ignorespaces Finales Konzept \textit {decision menu}\relax }}{23}
 \contentsline {figure}{\numberline {13}{\ignorespaces Erweiterung des \textit {decision menu}\relax }}{23}
 \contentsline {figure}{\numberline {14}{\ignorespaces Platzierung anwendungsspezifischer Funktionen\relax }}{24}
+\contentsline {figure}{\numberline {15}{\ignorespaces Interfaceimplementation\relax }}{26}
+\contentsline {figure}{\numberline {16}{\ignorespaces Teleportationsfunktion\relax }}{27}
+\contentsline {figure}{\numberline {17}{\ignorespaces Markieren und Selektieren eines W\IeC {\"u}rfels\relax }}{27}
+\contentsline {figure}{\numberline {18}{\ignorespaces Verwendung der Translationsfunktion\relax }}{28}
+\contentsline {figure}{\numberline {19}{\ignorespaces Rotieren eines Objektes\relax }}{28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Verwendung der Skalierungsfunktion\relax }}{29}
+\contentsline {figure}{\numberline {21}{\ignorespaces Einblendung eines Funktionstitels bei blinder Bedienung\relax }}{29}
+\contentsline {figure}{\numberline {22}{\ignorespaces Angepasster virtueller Raum f\IeC {\"u}r Evaluation\relax }}{32}
