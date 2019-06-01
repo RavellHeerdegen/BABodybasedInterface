@@ -9,49 +9,51 @@ A level-1 auxiliary file: Kapitel/hauptteil.aux
 A level-1 auxiliary file: Kapitel/schluss.aux
 Database file #1: referenzen.bib
 Warning--I'm ignoring asurveyon3dobjectmanipulation's extra "journal" field
---line 171 of file referenzen.bib
+--line 155 of file referenzen.bib
+Warning--can't use both volume and number fields in ergonomics
+Warning--empty publisher in ergonomics
 Warning--empty journal in anintroductionto3dspacial
 Warning--empty journal in hmdsinpsychology
 Warning--empty journal in colors
-You've used 35 entries,
+You've used 42 entries,
             2773 wiz_defined-function locations,
-            822 strings with 12518 characters,
-and the built_in function-call counts, 20024 in all, are:
-= -- 1912
-> -- 1089
-< -- 36
-+ -- 368
-- -- 332
-* -- 1513
-:= -- 2923
-add.period$ -- 141
-call.type$ -- 35
-change.case$ -- 210
-chr.to.int$ -- 34
-cite$ -- 73
-duplicate$ -- 966
-empty$ -- 1558
-format.name$ -- 379
-if$ -- 4417
-int.to.chr$ -- 2
+            867 strings with 13952 characters,
+and the built_in function-call counts, 22115 in all, are:
+= -- 2082
+> -- 1181
+< -- 44
++ -- 401
+- -- 359
+* -- 1628
+:= -- 3251
+add.period$ -- 162
+call.type$ -- 42
+change.case$ -- 239
+chr.to.int$ -- 42
+cite$ -- 89
+duplicate$ -- 1072
+empty$ -- 1770
+format.name$ -- 417
+if$ -- 4853
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 39
-newline$ -- 205
-num.names$ -- 142
-pop$ -- 447
+missing$ -- 42
+newline$ -- 241
+num.names$ -- 170
+pop$ -- 532
 preamble$ -- 1
-purify$ -- 180
+purify$ -- 203
 quote$ -- 0
-skip$ -- 816
+skip$ -- 906
 stack$ -- 0
 substring$ -- 865
-swap$ -- 247
-text.length$ -- 23
+swap$ -- 248
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 355
-warning$ -- 3
-while$ -- 175
+type$ -- 427
+warning$ -- 5
+while$ -- 196
 width$ -- 0
-write$ -- 537
-(There were 4 warnings)
+write$ -- 621
+(There were 6 warnings)

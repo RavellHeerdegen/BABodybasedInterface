@@ -1,24 +1,27 @@
-8 MIN
-6 MIN
-9 MIN
-6 MIN
-9 MIN
-8 MIN
-6 MIN
-7 MIN
-9 MIN
-5 MIN
-12 MIN
-ROBIN 5 MIN
-6 MIN
-8 MIN
-6 MIN
-8 MIN
-7 MIN
-9 MIN
-5 MIN
-6 MIN
-8 MIN
+8 MIN m
+6 MIN m
+9 MIN w
+6 MIN w
+9 MIN m
+8 MIN w
+6 MIN m
+7 MIN m
+9 MIN w
+5 MIN w
+12 MIN m
+6 MIN w
+8 MIN m
+6 MIN w
+8 MIN w
+7 MIN m
+9 MIN m
+5 MIN m
+6 MIN m
+8 MIN m
+7 MIN m
+5 MIN m ROBIN
+
+
 
 
 Feedback:
@@ -26,6 +29,10 @@ Feedback:
 Funktionen nicht anwählbar
 Funktionen nicht anwählbar
 Funktionen nicht anwählbar
+Funktionen nicht anwählbar
+Blinde Bedienung cool
+Skalierung buggy wenn Controller still
+Rotation nicht smooth, unnatürlich
 Linkshändersupport erwünscht
 Laserpointer tat nicht
 Quit funktion zu weit unten
@@ -35,4 +42,42 @@ Blinde bedienung umständlich weil Funktionen zu weit unten
 Grip button irritierend
 Laserpointer irritierend bei Funktionsauswahl
 Rotation war ungewöhnlich, Schieben bei Zylinder statt Handdreheung
+
+-------- RICHTIG ---------
+ROBIN 5 MIN m 4
+8 MIN m 2
+6 MIN w 2
+9 MIN w 3
+6 MIN m 2
+9 MIN w 1
+8 MIN m 2
+6 MIN m 1
+7 MIN w 1
+9 MIN w 3
+5 MIN m 2
+12 MIN w 1
+6 MIN m 2
+8 MIN w 2
+6 MIN w 2
+8 MIN m 2
+7 MIN m 3
+9 MIN m 2
+5 MIN m 1
+6 MIN m 1
+8 MIN w 1
+7 MIN m 4
+
+DURCH ZEIT VR ERF 1 = 7,5 Minuten
+DURCH ZEIT VR ERF 2 = 7 Minuten
+DURCH ZEIT VR ERF 3 = 8,3 Minuten
+DURCH ZEIT VR ERF 4 = 6 Minuten
+
+5+8+6+8+6+5+6+8+7+9+5+6+7 = 88/13 = 6,77
+
+6+9+9+7+9+12+8+6+8 = 74 / 9 = 8,2
+
+405 = 100% Männer
+492 = ? 121,48% Frauen
+
+Durchschnitt: 7,27 MIN
 

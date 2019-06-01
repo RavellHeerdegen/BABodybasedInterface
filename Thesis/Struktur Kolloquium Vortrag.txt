@@ -1,0 +1,53 @@
+Struktur Kolloquium Vortrag
+
+Themanennung
+Agenda
+Ziele der Arbeit
+Fragestellungen
+Head mounted displays (Bilder)
+Eingabegeräte (Bilder)
+Ergonomie
+Verwandte Arbeiten und Designs (Bilder)
+Anforderungen aus Theorieteil (Bild)
+Anforderungen Anwendung + Interface (Bilder)
+Implementation - Besondere Ereignisse, Hindernisse, Probleme - Weg zur Lösung
+Ergebnis Implementation (Bilder der Aktionen)
+Video der Verwendung des Systems
+Evaluation - Methode, Vorgehen, Fragen der Umfrage (Bilder zeigen), Usability Definition (ISO Norm 9241)
+Ergebnisse als Zahlen und Diagramme (Gegenüberstellungen und Vergleiche)
+Interpretation der Ergebnisse
+Fazit - Ausblick
+Quellen
+Danke
+
+
+Vorgehen der Präsentation ist nach dem Framework von Herrn Frank Dopatka 2016
+
+1. Einleitung
+- ggf. Kurzvorstellung des Unternehmens bzw. des Umfelds der Thesis
+- Was ist die Aufgabe?
+- Warum ist die Aufgabe bedeutend bzw. interessant als Thesis?
+2. Problemstellung und Zielsetzung
+- Detail-Beschreibung und Abgrenzung der Aufgabe
+- Was ist schon da und was soll gemacht werden?
+- Was soll Ihre eigene Leistung sein?
+- Wie soll die Güte Ihre Ergebnisses gemessen werden?
+3. State-of-the-Art
+- Was gibt es für Methoden, um die Aufgabe zu lösen?
+- Methoden vorstellen und mit Literatur belegen
+- Alternative Lösungsansätze aufzeigen
+- gut begründete Entscheidung für einen Lösungsansatz
+4. Weg zur Lösung
+- genaue Beschreibung des Vorgehens, wie Sie vom Problem zur Lösung kommen
+- nicht die Präsentation der Lösung, sondern insbesondere der Weg dorthin
+- Jede Entscheidung muss begründet werden!
+5. Umsetzung der Lösung
+- Was ist das Ergebnis?
+- Präsentation der Lösung
+- Wie gut ist das Ergebnis?
+6. kritisches Fazit und ggf. Ausblick
+- ganz kurze Zusammenfassung, was in 1-5 gezeigt wurde
+- Ist alles so gelaufen, wie Sie es sich vorgestellt haben?
+- Was ist gut, was ist nicht so gut?
+- Ist das Ergebnis im Einsatz; war es erfolgreich?
+- Wie könnte man weitermachen? Wird weitergemacht?

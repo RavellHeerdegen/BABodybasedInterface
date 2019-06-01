@@ -1,29 +1,31 @@
-\contentsline {section}{\numberline {1}Einleitung}{4}
-\contentsline {subsection}{\numberline {1.1}Kontext und Motivation}{4}
-\contentsline {subsection}{\numberline {1.2}Ziele der Arbeit}{4}
-\contentsline {section}{\numberline {2}Konzeption und Entwicklung}{5}
-\contentsline {subsection}{\numberline {2.1}Grundlagen}{5}
-\contentsline {subsubsection}{\numberline {2.1.1}Virtual reality}{5}
-\contentsline {subsubsection}{\numberline {2.1.2}Head-mounted displays}{6}
-\contentsline {subsubsection}{\numberline {2.1.3}Eingabeger\IeC {\"a}te}{8}
-\contentsline {subsubsection}{\numberline {2.1.4}Ergonomie}{9}
-\contentsline {subsubsection}{\numberline {2.1.5}3D Benutzeroberfl\IeC {\"a}chen}{11}
-\contentsline {subsubsection}{\numberline {2.1.6}K\IeC {\"o}rperbasierte Interfaces}{12}
-\contentsline {subsection}{\numberline {2.2}Hinf\IeC {\"u}hrung zum Konzept}{13}
-\contentsline {subsubsection}{\numberline {2.2.1}Anwendungsanforderungen}{14}
-\contentsline {subsubsection}{\numberline {2.2.2}Richtlinien}{14}
-\contentsline {subsubsection}{\numberline {2.2.3}Interfacepositionierung}{15}
-\contentsline {subsubsection}{\numberline {2.2.4}Verwandte Ideen und Konzepte}{16}
-\contentsline {subsubsection}{\numberline {2.2.5}Interfaceanforderungen}{19}
-\contentsline {subsubsection}{\numberline {2.2.6}Finales Interfacekonzept}{19}
-\contentsline {subsection}{\numberline {2.3}Implementation}{21}
-\contentsline {subsubsection}{\numberline {2.3.1}Verwendete Frameworks und Tools}{22}
-\contentsline {subsubsection}{\numberline {2.3.2}Umsetzung}{23}
-\contentsline {subsubsection}{\numberline {2.3.3}Probleme und Hindernisse}{29}
-\contentsline {subsection}{\numberline {2.4}Evaluation}{30}
-\contentsline {subsubsection}{\numberline {2.4.1}Aufbau}{30}
-\contentsline {subsubsection}{\numberline {2.4.2}Durchf\IeC {\"u}hrung}{32}
-\contentsline {subsubsection}{\numberline {2.4.3}Diskussion}{33}
-\contentsline {section}{\numberline {3}Schluss}{34}
-\contentsline {subsection}{\numberline {3.1}Fazit}{34}
-\contentsline {subsection}{\numberline {3.2}Zukunftsaussichten und Pl\IeC {\"a}ne}{34}
+\contentsline {section}{\numberline {1}Einleitung}{5}
+\contentsline {subsection}{\numberline {1.1}Kontext und Motivation}{5}
+\contentsline {subsection}{\numberline {1.2}Ziele der Arbeit}{5}
+\contentsline {section}{\numberline {2}Konzeption und Entwicklung}{6}
+\contentsline {subsection}{\numberline {2.1}Grundlagen}{6}
+\contentsline {subsubsection}{\numberline {2.1.1}Virtual Reality}{6}
+\contentsline {subsubsection}{\numberline {2.1.2}Head-mounted displays}{7}
+\contentsline {subsubsection}{\numberline {2.1.3}Eingabeger\IeC {\"a}te}{9}
+\contentsline {subsubsection}{\numberline {2.1.4}Ergonomie}{14}
+\contentsline {subsubsection}{\numberline {2.1.5}3D Benutzungsoberfl\IeC {\"a}chen}{15}
+\contentsline {subsubsection}{\numberline {2.1.6}K\IeC {\"o}rperbasierte Interfaces}{17}
+\contentsline {subsubsection}{\numberline {2.1.7}Anforderungen aus Grundlagen}{18}
+\contentsline {subsection}{\numberline {2.2}Hinf\IeC {\"u}hrung zum Konzept}{18}
+\contentsline {subsubsection}{\numberline {2.2.1}Anwendungsanforderungen}{19}
+\contentsline {subsubsection}{\numberline {2.2.2}Richtlinien}{19}
+\contentsline {subsubsection}{\numberline {2.2.3}Interfacepositionierung}{21}
+\contentsline {subsubsection}{\numberline {2.2.4}Verwandte Ideen und Konzepte}{22}
+\contentsline {subsubsection}{\numberline {2.2.5}Interfaceanforderungen}{25}
+\contentsline {subsubsection}{\numberline {2.2.6}Finales Interfacekonzept}{26}
+\contentsline {subsection}{\numberline {2.3}Implementation}{27}
+\contentsline {subsubsection}{\numberline {2.3.1}Verwendete Frameworks und Tools}{28}
+\contentsline {subsubsection}{\numberline {2.3.2}Umsetzung}{29}
+\contentsline {subsubsection}{\numberline {2.3.3}Probleme und Hindernisse}{35}
+\contentsline {subsection}{\numberline {2.4}Evaluation}{36}
+\contentsline {subsubsection}{\numberline {2.4.1}Aufbau}{36}
+\contentsline {subsubsection}{\numberline {2.4.2}Durchf\IeC {\"u}hrung}{38}
+\contentsline {subsubsection}{\numberline {2.4.3}Ergebnisse}{39}
+\contentsline {subsubsection}{\numberline {2.4.4}Diskussion}{43}
+\contentsline {section}{\numberline {3}Schluss}{45}
+\contentsline {subsection}{\numberline {3.1}Fazit}{45}
+\contentsline {subsection}{\numberline {3.2}Zukunftsaussichten und Pl\IeC {\"a}ne}{45}

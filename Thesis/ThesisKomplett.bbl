@@ -1,9 +1,31 @@
-\begin{thebibliography}{35}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alathas(2018)]{susscore}
+Hadi Alathas.
+\newblock {How to Measure Product Usability with the System Usability Scale
+  (SUS) Score}, 2018.
+\newblock
+  https://uxplanet.org/how-to-measure-product-usability-with-the-system-usability-scale-sus-score-69f3875b858f
+  aufgerufen am 22.05.2019.
+
+\bibitem[Alger(2015)]{mikealger}
+Mike Alger.
+\newblock {Visual Design Methods for Virtual Reality}.
+\newblock \emph{Personal Website}, page~98, 2015.
+
+\bibitem[Alkemade et~al.(2017)Alkemade, Verbeek, and Lukosch]{alkemade}
+Remi Alkemade, Fons~J. Verbeek, and Stephan~G. Lukosch.
+\newblock {On the Efficiency of a VR Hand Gesture-Based Interface for 3D Object
+  Manipulations in Conceptual Design}.
+\newblock \emph{International Journal of Human-Computer Interaction},
+  33\penalty0 (11):\penalty0 882--901, 2017.
+\newblock ISSN 15327590.
+\newblock \doi{10.1080/10447318.2017.1296074}.
 
 \bibitem[Burmester et~al.(2018)Burmester, Haasler, Schippert, Engel, Tille,
   Reinhardt, and Hurtienne]{interactionpatterns}
@@ -15,6 +37,17 @@ Michael Burmester, Kristin Haasler, Katharina Schippert, Vivien Engel, Ralph
   Computer 2018 - Usability Professionals}, pages 53--66, Bonn, 2018.
   Gesellschaft für Informatik e.V. Und German UPA e.V.
 
+\bibitem[CorvidDude(2018)]{corviddude}
+CorvidDude.
+\newblock {VR spatial UI design exercise}, 2018.
+\newblock https://www.youtube.com/watch?v=y{\_}s3HZpaOLI aufgerufen am
+  20.05.2019.
+
+\bibitem[Cyberith(2019)]{virtualizer}
+Cyberith.
+\newblock {2nd Gen VR Treadmill, Cyberith Virtualizer ELITE 2}, 2019.
+\newblock https://www.cyberith.com/virtualizer-elite/ aufgerufen am 20.05.2019.
+
 \bibitem[Dezfuli et~al.(2012)Dezfuli, Khalilbeigi, Huber, Mueller, and
   Muehlhaeuser]{palmrc}
 Niloofar Dezfuli, Mohammadreza Khalilbeigi, Jochen Huber, Florian Mueller, and
@@ -24,6 +57,14 @@ Niloofar Dezfuli, Mohammadreza Khalilbeigi, Jochen Huber, Florian Mueller, and
 \newblock In \emph{Proceedings of the 10th European Conference on Interactive
   TV and Video}, EuroITV '12, pages 27--34, New York, NY, USA, 2012. ACM.
 \newblock ISBN 978-1-4503-1107-6.
+
+\bibitem[Ed and Hutchison(2013)]{ergonomics}
+Aaron~Marcus Ed and David Hutchison.
+\newblock \emph{{Design, User Experience, and Usability. Web, Mobile, and
+  Product Design}}, volume 8015.
+\newblock 2013.
+\newblock ISBN 978-3-642-39252-8.
+\newblock \doi{10.1007/978-3-642-39253-5}.
 
 \bibitem[Ehrlich(2017)]{wheelpickerpiemenu}
 Jan Ehrlich.
@@ -178,6 +219,12 @@ Pranav Mistry, Pattie Maes, and Liyan Chang.
   Systems}, CHI EA '09, pages 4111--4116, New York, NY, USA, 2009. ACM.
 \newblock ISBN 978-1-60558-247-4.
 
+\bibitem[Mycestro(2019)]{mycestro}
+Mycestro.
+\newblock {Mycestro – A 3D wearable, gesture-control mouse{\ldots}and more!},
+  2019.
+\newblock http://mycestro.com/ aufgerufen am 20.05.2019.
+
 \bibitem[Novak et~al.(2014)Novak, Mihelj, and Begus]{virtualreality}
 Domen Novak, Matjaz Mihelj, and Samo Begus.
 \newblock \emph{{Virtual Reality Technology and Applications}}.
@@ -193,22 +240,13 @@ Francisco~R. Ortega, Fatemeh Abyarjoo, Armando Barreto, Naphtali Rishe, and
 \newblock A. K. Peters, Ltd., Natick, MA, USA, 2016.
 \newblock ISBN 1482216949, 9781482216943.
 
-\bibitem[Riecke et~al.(2018{\natexlab{a}})Riecke, LaViola, and
-  Kruijff]{fingertracking}
-Bernhard~E. Riecke, Joseph~J. LaViola, Jr., and Ernst Kruijff.
-\newblock 3d user interfaces for virtual reality and games: 3d selection,
-  manipulation, and spatial navigation.
-\newblock In \emph{ACM Siggraph 2018 Courses}, Siggraph '18, pages 13:1--13:94,
-  New York, NY, USA, 2018{\natexlab{a}}. ACM.
-\newblock ISBN 978-1-4503-5809-5.
-
-\bibitem[Riecke et~al.(2018{\natexlab{b}})Riecke, LaViola, and
+\bibitem[Riecke et~al.(2018)Riecke, LaViola, and
   Kruijff]{virtualrealityandgames}
 Bernhard~E. Riecke, Joseph~J. LaViola, Jr., and Ernst Kruijff.
 \newblock 3d user interfaces for virtual reality and games: 3d selection,
   manipulation, and spatial navigation.
 \newblock In \emph{ACM Siggraph 2018 Courses}, Siggraph '18, pages 13:1--13:94,
-  New York, NY, USA, 2018{\natexlab{b}}. ACM.
+  New York, NY, USA, 2018. ACM.
 \newblock ISBN 978-1-4503-5809-5.
 
 \bibitem[Rogers et~al.(2011")Rogers, Sharp, and Preece]{decidebook}
@@ -219,8 +257,7 @@ Yvonne Rogers, Helen Sharp, and Jenny Preece.
 \bibitem[RootMotion(2014)]{finalik}
 RootMotion.
 \newblock {FinalIK Plugin}, 2014.
-\newblock URL \url{http://www.root-motion.com/final-ik.html}.
-\newblock aufgerufen am 06.04.2019.
+\newblock http://www.root-motion.com/final-ik.html aufgerufen am 06.04.2019.
 
 \bibitem[Stuerzlinger and Wingrave(2011)]{constraints3duis}
 Wolfgang Stuerzlinger and Chadwick~A. Wingrave.
@@ -239,14 +276,20 @@ Denis Vajak.
 \bibitem[{Valve Corporation}(2014)]{steamvr}
 {Valve Corporation}.
 \newblock {SteamVR Plugin}, 2014.
-\newblock URL \url{https://steamcommunity.com/steamvr}.
-\newblock aufgerufen am 01.05.2019.
+\newblock https://steamcommunity.com/steamvr aufgerufen am 01.05.2019.
 
 \bibitem[Vos(1978)]{colors}
 Judd Vos.
 \newblock Colorimetric and photometric properties of a 2 degree fundamental
   observer.
 \newblock pages 125–--128, 1978.
+
+\bibitem[W3C and Matt(2002)]{usability}
+Marja W3C and Matt.
+\newblock {Exploring Usability Enhancements in W3C Process - Usability - ISO
+  9241 definition;}, 2002.
+\newblock https://www.w3.org/2002/Talks/0104-usabilityprocess/slide3-0.html
+  aufgerufen am 17.05.2019.
 
 \bibitem[{Weiß} et~al.(2018){Weiß}, {Hepperle}, {Sieß}, and
   {Woelfel}]{whatuserinterfacetouse}
