@@ -1,7 +1,0 @@
-Gibt es ersichtliche Unterschiede zwischen Interface und Anwendungsbewertung
-
-Habe ich auch qualitatives Feedback persönlich von Leuten
-
-An Gizmo gedacht ? Pfeilkoordinatensystem für Manipulation von Objekten
-
-Wie sehr ist das System von Alkemade et al mit meinem vergleichbar
